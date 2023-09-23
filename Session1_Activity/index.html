@@ -2,20 +2,44 @@
 <html lang="en-us">
     <head>
         <meta charset="UTF-8">
+        <!--
+            meta name="viewport" 
+            defines responsiveness of the website
+        -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--
+            meta name="author" 
+            defines the author of the website
+        -->
         <meta name="author" content="John Yrrah Cabiles">
+        <!--
+            link rel="icon"
+            defines tab icon of the website
+        -->
         <link rel="icon" type="image/x-icon" href="images/portfolio_icon.ico">
         <title>Yrrah's Portfolio</title>
     </head>
     <body>
         <div>
+            <!--
+                <header>
+                defines the header of the website
+            -->
             <header>
-                <h2>Yrrah Cabiles</h1>
+                <h1>Yrrah Cabiles</h1>
                 <p>Aspiring Web Developer</p>
+                <!--
+                    <audio controls autoplay loop preload="auto">
+                    defines the background music of the website
+                -->
                 <audio controls autoplay loop preload="auto">
                     <source src="sources/bgmusic.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
+                <!--
+                    <nav>
+                    defines the navigation tabs of the website
+                -->
                 <nav>
                     <ul>
                         <li><a href="#introduction">About Me</a></li>
@@ -28,22 +52,37 @@
                 </nav>
                 <hr>
             </header>
+            <!--
+                <main>
+                defines the main content of the body of the website
+            -->
             <main>
+                <!--
+                    <img>
+                    defines the cover photo of the website
+                -->
                 <img src="images/profile.jpg" alt="Right Side Smiling" width="50%">
+                <!-- introduction section -->
                 <section id="introduction">
                     <h2>About Me</h2>
+                    <!--
+                        <p>
+                        defines the introduction of the author of the website
+                    -->
                     <p>
                         I am John Yrrah Chanchico Cabiles, a dedicated and hardworking student currently pursuing a <strong>Bachelor of Science in Information Technology</strong>. With a passion for web development and a knack for problem-solving, I thrive in collaborative environments where I can learn from others and share my insights. <q><em>I strongly believe in the value of considering different opinions before making decisions, as it leads to more informed and well-rounded choices.</em></q>
                     </p>
                 </section>
+                <!-- edducation section -->
                 <section id="education">
                     <h2>Education</h2>
+                    <!-- education table -->
                     <table width="100%">
                         <thead>
                             <tr>
-                                <th width="33%"><h3>Degree</h3></th>
-                                <th width="33%"><h3>University</h3></th>
-                                <th width="33%"><h3>Year</h3></th>
+                                <th width="33%">Degree</th>
+                                <th width="33%">University</th>
+                                <th width="33%">Year</th>
                             </tr>
                         </thead>
                         <tr">
@@ -70,12 +109,13 @@
                         </tr>
                     </table>
                 </section>
+                <!-- skills section -->
                 <section id="skills">
                     <h2>Skills and Expertise</h2>
                     <p>
                         With a diverse skill set encompassing programming, web development, and UI/UX design, I am well-equipped to create engaging and user-friendly digital experiences. Here's a breakdown of my key skills:
                     </p>
-                
+                    <!-- programming and development section of the skills section -->
                     <h4>Programming and Development:</h4>
                     <ul>
                         <li>
@@ -97,7 +137,7 @@
                             <strong><img src="images/php.png" width="15px">PHP:</strong> Skilled in server-side scripting with PHP to create dynamic web applications and enhance website functionality.
                         </li>
                     </ul>
-                
+                    <!-- ui/ux design section of the skills section -->
                     <h4>UI/UX Design:</h4>
                     <p>
                         <strong>UI (User Interface) Design:</strong> With a keen eye for aesthetics and usability, I create visually pleasing and intuitive user interfaces. My designs prioritize user experience, ensuring that interfaces are user-friendly and navigation is seamless.
@@ -110,8 +150,10 @@
                         These skills allow me to bridge the gap between development and design, resulting in well-rounded digital solutions that not only function flawlessly but also provide a delightful user experience.
                     </p>
                 </section>
+                <!-- projects section -->
                 <section id="projects">
                     <h2>Projects</h2>
+                    <!-- first project -->
                     <details>
                         <br/>
                         <summary><strong>Brian: An Advanced Virtual Assistant</strong></summary>
@@ -143,6 +185,7 @@
                         </dl>
                     </details>
                     <br/>
+                    <!-- second project -->
                     <details>
                         <summary><strong>BioTam: A Mobile Learning Application for General Biology</strong></summary>
                         <p>
@@ -169,10 +212,13 @@
                     </details>
                     <br/>
                 </section>
+                <!-- interests section -->
                 <section id="interests">
                     <h2>Interests</h2>
+                    <!-- top 5 favorite animes ordered list -->
                     <p>My top 5 favorite Animes are the following:</p>
                     <ol>
+                        <!-- top 1 anime -->
                         <li>
                             <details>
                                 <summary><strong>Overlord</strong></summary>
@@ -185,6 +231,7 @@
                                 </dl>
                             </details>
                         </li>
+                        <!-- top 2 anime -->
                         <li>
                             <details>
                                 <summary><strong>That Time I Got Reincarnated as a Slime</strong></summary>
@@ -198,6 +245,7 @@
                                 </dl>
                             </details>
                         </li>
+                        <!-- top 3 anime -->
                         <li>
                             <details>
                                 <summary><strong>Mushoku Tensei: Jobless Reincarnation</strong></summary>
@@ -211,6 +259,7 @@
                                 </dl>
                             </details>
                         </li>
+                        <!-- top 4 anime -->
                         <li>
                             <details>
                                 <summary><strong>Sword Art Online</strong></summary>
@@ -224,6 +273,7 @@
                                 </dl>
                             </details>
                         </li>
+                        <!-- top 5 anime -->
                         <li>
                             <details>
                                 <summary><strong>Demon Slayer</strong></summary>
@@ -238,6 +288,7 @@
                         </li>
                     </ol>
                 </section>
+                <!-- nothing section -->
                 <section id="nothing">
                     <h2>Just Nothing</h2>
                     <b>This text is Bold</b>
@@ -249,8 +300,10 @@
                     <br><u>This text is Underline</u>
                 </section>
             </main>
+            <!-- footer of the website -->
             <footer>
                 <hr>
+                <!-- contact information section -->
                 <h2>Get in touch</h2>
                 <address>
                     Email: <a href="mailto:jyrrahcc@gmail.com" title="Send Mail">jyrrahcc@gmail.com</a><br/>
