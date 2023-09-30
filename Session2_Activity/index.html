@@ -10,9 +10,11 @@
     <body style="background: linear-gradient(to bottom, #00001a, #000022); max-width: 2000px; color: white; font-family: Arial, sans-serif; position: relative; overflow-x: hidden; width: 100%; height: 100%; margin: 0px;">
         <!-- Space Background -->
         <canvas id="stars" style="width: 100%; height: 100%; display: block; position: fixed; top: 0; left: 0; z-index: -9999;"></canvas>
+        <!-- Rocket Ship -->
         <img src="sources/rocketShip.svg" alt="Rocket Ship" style="width: 20%; position: absolute; top: 0; right: 20px; z-index: -1;">
         <!-- Header Section -->
         <header style="text-align: center; padding: 20px;">
+            <!-- Logo -->
             <div style="display: flex; flex-wrap: wrap; justify-content: center;">
                 <img src="sources/CodeSpaceLight.svg" alt="CodeSpaceLight" style="width: 60px; margin: 0px 10px;">
                 <h1 style="font-size: 36px;">Lasallian CodeSpace</h1>
@@ -27,17 +29,19 @@
                 <div style="display: flex; flex-wrap: wrap;">
                     <!-- About Us Figure -->
                     <div style="flex-grow: 1; flex-basis: 200; display: flex; justify-content: center; align-items: center; margin: 20px 0px;">
-                    <figure style="text-align: center;">
-                        <img src="images/about.jpg" alt="About Us" usemap="#picmap" style="width: 100%; max-height: 400px;"/>
-                        <map name="picmap">
-                            <area shape="rect" coords="0,0,400,400" alt="About Us" href="https://www.facebook.com/photo/?fbid=122135831372001855&set=pb.61550055659647.-2207520000" target="_blank">
-                        </map>
-                    </figure>
+                        <figure style="text-align: center;">
+                            <img src="images/about.jpg" alt="About Us" usemap="#picmap" style="width: 100%; max-height: 400px;"/>
+                            <!-- clickable area of the image -->
+                            <map name="picmap">
+                                <area shape="rect" coords="0,0,400,400" alt="About Us" href="https://www.facebook.com/photo/?fbid=122135831372001855&set=pb.61550055659647.-2207520000" target="_blank">
+                            </map>
+                        </figure>
                     </div>
                     <!-- Executive Board -->
                     <div style="flex-grow: 1; flex-basis: 200; display: flex; justify-content: center; align-items: center; margin: 20px 0px;">
                         <table style="text-align: center; border: 1px solid white; border-radius: 10px; margin: auto;">
                             <tr>
+                                <!-- Vertical Text Table Header -->
                                 <th rowspan="7" style="padding: 10px; writing-mode: vertical-lr;text-orientation: upright;">Executive Board</th>
                                 <td colspan="4" style="padding: 10px;">Executive Director</td>
                                 <td></td>
@@ -87,7 +91,7 @@
             <!-- Activities Section -->
             <section id="activities" style="margin: 20px;">
                 <h2 style="margin-left: 10px; padding-right: 40px; border-bottom: 1px solid white; width: fit-content;">Activities</h2>
-                <!-- Lasallian Bootcamp -->
+                <!-- Lasallian Bootcamp Activity -->
                 <div>
                     <h3 style="text-align: center;">Lasallian CodeSpace Bootcamp</h3>
                     <ol type="I" style="margin: 40px;">
@@ -164,56 +168,70 @@
                         </li>
                     </ol>
                 </div>
+                <!-- CS50 Activity -->
+                <div style="justify-content: center; width: 100%;">
+                    <h3 style="text-align: center;">CS50 Session 0</h3>
+                    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WHcgVxTYIyc?si=wP7z4rJZLfY-UOq9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="margin: auto;"></iframe>
+                    </div>
+                </div>
             </section>
+            <!-- Join Us Section -->
             <section id="joinus" style="margin: 20px;"">
                 <h2 style="margin-left: 10px; padding-right: 40px; border-bottom: 1px solid white; width: fit-content;">Join Us</h2>
                 <!-- SignUp Card -->
                 <div style="margin: 20px;">
                     <div style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; border-radius: 10px; width: 300px; margin: 0 auto;">
                         <h2>Sign Up</h2>
-                        <form action="index.html">
+                        <form action="index.html" method="POST">
                             <div>
-                                <input type="text" placeholder="Enter your Full Name" id="name" required/>
                                 <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your Full Name" required style="width: 100%;" />
                             </div>
                             <div>
-                                <input type="text" placeholder="Enter your CYS" id="cys" required/>
                                 <label for="cys">Course/Year/Section</label>
+                                <input type="text" id="cys" name="cys" placeholder="Enter your CYS" required style="width: 100%;" />
                             </div>
                             <div>
-                                <input type="number" placeholder="Enter your Age" id="age" min="18" max="50" required/>
                                 <label for="age">Age</label>
+                                <input type="number" id="age" name="age" placeholder="Enter your Age" min="18" max="50" required style="width: 100%;" />
                             </div>
                             <div>
-                                <input type="email" placeholder="Enter your Email" id="email" required/>
+                                <label for="gender">Gender</label>
+                                <select id="gender" name="gender" style="width: 100%;" >
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </div>
+                            <div>
                                 <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your Email" required style="width: 100%;" />
                             </div>
                             <div>
-                                <input type="password" placeholder="Enter your Password" id="password" required/>
                                 <label for="password">Password</label>
+                                <input type="password" id="password" name="password" placeholder="Enter your Password" required style="width: 100%;" />
                             </div>
-
-                            <fieldset>
-                                <legend>Type of Developer</legend>
-                                <input type="radio" name="dev-type" id="front-end" />
-                                <label for="front-end">Frontend Web Developer</label>
-                                <br />
-                                <input type="radio" name="dev-type" id="back-end" />
-                                <label for="back-end">Backend Web Developer</label>
-                                <br />
-                                <input type="radio" name="dev-type" id="full-stack" />
-                                <label for="full-stack">Full Stack Web Developer</label>
+                        
+                            <fieldset style="width: 100%;">
+                                <legend>Membership Type</legend>
+                                <div>
+                                    <input type="radio" id="front-end" name="dev-type" value="member" />
+                                    <label for="front-end">Member</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="back-end" name="dev-type" value="bootcamper" />
+                                    <label for="back-end">Bootcamper</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="full-stack" name="dev-type" value="committee" />
+                                    <label for="full-stack">Committee</label>
+                                </div>
                             </fieldset>
-                            <textarea cols="20" rows="3" style="resize: none;">Comment</textarea>
-                            <br />
-                            <label for="gender">Gender</label>
-                            <select id="gender">
-                            <option>Male</option>
-                            <option>Female</option>
-                            <option>Non-binary</option>
-                            </select>
-                            <!-- Login Form Fields -->
-                            <!-- Add your form fields here -->
+                            <div>
+                                <label for="goal">What is your goal for joining Lasallian CodeSpace?</label>
+                                <textarea id="goal" name="goal" rows="3" placeholder="Type here..." style="resize: none; width: 100%;"></textarea>
+                            </div>
                             <button type="submit" style="background-color: #1a1a1a; color: #fff; padding: 10px 20px; border: none; cursor: pointer; transition: background-color 0.3s ease;">
                                 Submit
                             </button>
@@ -222,8 +240,10 @@
                 </div>
             </section>
             <!-- Contact Section -->
-            <section style="position: relative; border: 1px solid white; margin-top: 175px; padding: 40px 0px 100px 0px; background-color: rgba(0, 0, 0, 0.7); text-align: center; border-radius: 2000px 2000px 0px 0px;">
+            <footer style="position: relative; border: 1px solid white; margin-top: 175px; padding: 40px 0px 100px 0px; background-color: rgba(0, 0, 0, 0.7); text-align: center; border-radius: 2000px 2000px 0px 0px;">
+                <!-- Austronaut SVG -->
                 <img src="sources/miniAstro.svg" alt="Astronaut" style="width: 200px; position: absolute; top: -150px; right: 50%; z-index: 1;">
+                <!-- Logo -->
                 <div style="display: flex; flex-wrap: wrap; justify-content: center; padding: 0px 175px 0px 175px;">
                     <img src="sources/CodeSpaceLight.svg" alt="CodeSpaceLight"  style="width: 60px; margin: 0px 10px;">
                     <h2 style="font-size: 36px;">Lasallian CodeSpace</h2>
@@ -234,22 +254,22 @@
                     <img src="images/fbIcon.png" alt="facebook" usemap="#fb" style="width: 50px; background-color: white; border-radius: 10px; margin: 10px">
                     <img src="images/instaIcon.png" alt="instagram" style="width: 50px; background-color: white; border-radius: 10px; margin: 10px">
                     <img src="images/twitIcon.png" alt="twitter" style="width: 50px; background-color: white; border-radius: 10px; margin: 10px">
+                    <!-- FB Link -->
                     <map name="fb">
                         <area shape="rect" coords="0,0,50,50" alt="About Us" href="https://www.facebook.com/LasallianCodeSpaceDLSUD" target="_blank">
                     </map>
                 </div>
                 <p>@2023 Lasallian CodeSpace</p>
-            </section>
+            </footer>
         </main>
         <!-- Navigation -->
-        <footer style="background-color: rgba(0, 0, 0, 0.7); z-index: 2; text-align: center; padding: 20px; width: 100%; position: fixed; bottom: 0; left: 0; right: 0;  margin-left: auto; 
-        margin-right: auto; ">
+        <nav style="background-color: rgba(0, 0, 0, 0.7); z-index: 2; text-align: center; padding: 20px; width: 100%; position: fixed; bottom: 0; left: 0; right: 0;  margin-left: auto; margin-right: auto; ">
             <ul style="list-style: none; padding: 0; margin: 0; justify-content: center;">
                 <li style="display: inline; margin: 20px;"><a href="#aboutus" style="text-decoration: none; color: #fff; font-weight: bold;">About Us</a></li>
                 <li style="display: inline; margin: 20px;"><a href="#activities" style="text-decoration: none; color: #fff; font-weight: bold;">Activities</a></li>
                 <li style="display: inline; margin: 20px;"><a href="#joinus" style="padding: 10px; text-decoration: none; color: #fff; font-weight: bold; border: 1px solid white; border-radius: 10px;">Join Us</a></li>
             </ul>
-        </footer>
+        </nav>
         <!-- frontend jscript for the background -->
         <script>
             // identify the canvas
