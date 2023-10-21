@@ -6,6 +6,7 @@
         <meta name="author" content="John Yrrah Cabiles">
         <link rel="icon" type="image/x-icon" href="res/Logo.svg">
         <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/f4f1b8744c.js" crossorigin="anonymous"></script>
         <title>CookieSpree</title>
     </head>
     <body>
@@ -13,7 +14,7 @@
         <header>
             <!-- Logo and Header 1 -->
             <section id="logo-container">
-                <img id="Logo" src="res/Logo.svg" title="Logo" alt="Logo"/>
+                <img class="logo" src="res/Logo.svg" title="Logo" alt="Logo"/>
                 <h1>CookieSpree</h1>
             </section>
             <!-- Navigation -->
@@ -28,9 +29,30 @@
                     <li>
                         <a href="">Products</a>
                     </li>
+                    <!-- Menu -->
                     <li>
-                        <!-- Menu -->
-                        <a id="menu"><img src="res/menucolored.png" alt="Menu" title="Menu"/></a>
+                        <a id="btn-menu"><img src="res/menucolored.png" alt="Menu" title="Menu"/></a>
+                        <section id="menu">
+                            <section>
+                                <section>
+                                </section>
+                                <section>
+                                    <img class="logo" src="res/Logo.svg" alt="Logo"/>
+                                    <h2>CookieSpree</h2>
+                                </section>
+                                <section id="search-bar">
+                                    <i class="fa fa-search" aria-hidden="true" style="font-size: 20px;"></i>
+                                    <p>Search...</p>
+                                </section>
+                                <section>
+                                    <a href=""><i class="fa fa-user" aria-hidden="true"></i><p>Account</p></a>
+                                    <a href=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i><p>Cart</p></a>
+                                    <a href=""><i class="fas fa-shield-alt    "></i><p>Policies</p></a>
+                                    <a href=""><i class="fa fa-pencil" aria-hidden="true"></i><p>Terms of Use</p></a>
+                                </section>
+                                <hr/>
+                            </section>
+                        </section>
                     </li>
                 </ul>
             </nav>
@@ -40,8 +62,8 @@
             <article class="background">
                 <section id="intro">
                     <section>
-                        <h2 id="callToAction">Bite into Bliss with Our Gourmet Cookies</h2>
-                        <p>From Classic Favorites to Creative Flavors, We Have It All</p>
+                        <h2 id="callToAction" class="title">Bite into Bliss with Our Gourmet Cookies</h2>
+                        <p class="title">From Classic Favorites to Creative Flavors, We Have It All</p>
                     </section>
                     <section>
                         <p>Order Now and Discover the Joy of Ultimate Cookie Haven!</p>
@@ -60,8 +82,8 @@
                         <img class="cookieImg" src="res/ChocolateChipCookie.png"/>
                     </section>
                     <section>
-                        <h3>Chocolate Chip Cookie</h3>
-                        <p>Our classic cookie made with semi-sweet chocolate chips, a hint of vanilla, and a soft, chewy texture. Perfect for any occasion and loved by all ages.</p>
+                        <h3 class="title">Chocolate Chip Cookie</h3>
+                        <p class="indent">Our classic cookie made with semi-sweet chocolate chips, a hint of vanilla, and a soft, chewy texture. Perfect for any occasion and loved by all ages.</p>
                         <a class="btn" href="">Learn More</a>
                     </section>
                 </section>
@@ -71,8 +93,8 @@
                         <img class="cookieImg" src="res/PeanutButterCookie.png"/>
                     </section>
                     <section>
-                        <h3>Peanut Butter Cookie</h3>
-                        <p>Our peanut butter cookie is made with all-natural peanut butter, creating a rich, nutty flavor that pairs perfectly with a glass of cold milk.</p>
+                        <h3 class="title">Peanut Butter Cookie</h3>
+                        <p class="indent">Our peanut butter cookie is made with all-natural peanut butter, creating a rich, nutty flavor that pairs perfectly with a glass of cold milk.</p>
                         <a class="btn" href="">Learn More</a>
                     </section>
                 </section>
@@ -89,7 +111,7 @@
             </section>
             <!-- Contact -->
             <section>
-                <p>Contact and Address</p>
+                <p class="title">Contact and Address</p>
                 <address>
                     <p>12 Mabini Street, Makati City, Metro Manila, Philippines</p>
                     <p>cookiespree@gmail.com</p>
@@ -98,7 +120,7 @@
             </section>
             <!-- Social Media -->
             <section>
-                <p>Share The Word</p>
+                <p class="title">Share The Word</p>
                 <section>
                     <img class="media" src="res/Facebook.png"/>
                     <img class="media" src="res/Instagram.png"/>
