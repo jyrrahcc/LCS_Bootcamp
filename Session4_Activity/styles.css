@@ -1,0 +1,191 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('res/rome.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1, .title {
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 1px 4px #000000;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+p {
+    font-weight: 300;
+}
+
+header {
+    background-image: url('res/rome.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+nav {
+    font-size: 0.875em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 4px #000000;
+    flex-wrap: wrap;
+}
+
+nav a {
+    width: max-content;
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+}
+
+.btn {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 10px;
+    background-color: #ECB800;
+    border-radius: 300px;
+    text-align: center;
+}
+
+.logo {
+    width: 50px;
+    border-radius: 100%;
+    padding: 10px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    top: 100px;
+}
+
+main {
+    max-width: 2000px;
+}
+
+.logo-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white
+}
+
+.cta {
+    font-size: 50px;
+    text-shadow: 1px 1px 4px #000000;
+    margin: 100px 20px 50px 20px;
+}
+
+#home section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home p {
+    font-size: 20px;
+}
+
+#home p:last-child {
+    text-shadow: 1px 1px 4px #000000;
+    max-width: 80%;
+    margin: 10px auto 50px auto;
+}
+
+#about {
+    background-color: white;
+    text-align: center;
+    position: relative;
+}
+
+#partners {
+    background-color: rgb(56, 129, 163);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    width: 100%;
+}
+
+section#partners img {
+    text-shadow: 1px 1px 4px #000000;
+    height: 100%;
+    max-height: 50px;
+    width: auto;
+}
+
+#about h2 {
+    margin: 30px 0px 40px 0px;
+    font-weight: 700;
+    color: black;
+    font-size: 30px;
+    text-shadow: 1px 1px 4px white;
+}
+
+#about img {
+    width: 100%;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 40px;
+}
+
+.description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.description-container p {
+    color: black;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.description-container p:first-child {
+    margin: 20px;
+    font-size: 25px;
+    text-shadow: 1px 1px 4px white;
+}
+
+.description-container p:last-child{
+    margin: 20px;
+    text-indent: 40px;
+}
+
+/*for responsive*/
+@media (max-width: 900px) {
+    h1 {
+        display: none;
+    }
+
+    nav a {
+        margin: 10px;
+    }
+}
