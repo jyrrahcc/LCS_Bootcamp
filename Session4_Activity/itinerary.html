@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+    <head>
+        <!-- Document Metadata -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="John Yrrah Cabiles">
+
+        <!-- Favicon and Styles -->
+        <link rel="icon" type="image/x-icon" href="res/GoGustoLogo.svg">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f4f1b8744c.js" crossorigin="anonymous"></script>
+
+        <!-- Page Title -->
+        <title>Tour Packages</title>
+    </head>
+    <body id="about-body">
+        <header id="header">
+            <section class="logo-container">
+                <img src="res/GoGustoLogo.svg" class="logo" alt="Go Gusto Logo"/>
+                <h1>Go Gusto</h1>
+            </section>
+            <nav>
+                <section>
+                    <a href="home.html">Home</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="#destinations" class="act">Tour Package</a>
+                    <a href="terms.html">Terms &#38 Conditions</a>
+                    <a href="#contact">Contact Us</a>
+                </section>
+                <a class="btn" id="form-btn">Start Your Journey</a>
+                <input type="checkbox" id="menu">
+                <label for="menu" class="btn" name="menu-btn" id="menu-btn" title="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <section id="menu-content">
+                    <a href="home.html">Home</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="#destinations" class="act">Tour Package</a>
+                    <a href="terms.html">Terms &#38 Conditions</a>
+                    <a href="#contact">Contact Us</a>
+                </section>
+            </nav>
+        </header>
+        <article class="form" id="form">
+            <section>
+                <section class="close">
+                    <input type="checkbox" id="close">
+                    <label for="close" name="close-btn" id="close-btn" title="Close">
+                        <i class="fas fa-window-close"></i>
+                    </label>
+                </section>
+                <section>
+                    <h2 class="title">Start Your Journey</h2>
+                    <p>Have questions or ready to book your dream trip? Contact us today and our friendly team will assist you.</p>
+                </section>
+                <form>
+                    <section>
+                        <section>
+                            <label for="firstName">First Name</label>
+                            <input type="text" placeholder="Enter first name..." name="firstName" id="firstName" required/>
+                        </section>
+                        <section>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" placeholder="Enter last name..." name="lastName" id="lastName" required/>
+                        </section>
+                    </section>
+                    <section>
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Enter email..."  name="email" id="email" required/>
+                    </section>
+                    <section>
+                        <label for="phone">Phone Number (e.g. 09123456789)</label>
+                        <input type="tel" id="phone" placeholder="Enter phone number..." name="phone" pattern="[0-9]{11}" required/>
+                    </section>
+                    <section>
+                        <label for="date">When do you plan to travel?</label>
+                        <input type="date" placeholder="dd/mm/yyyy" id="date" name="date" min="2023-11-01" required/>
+                    </section>
+                    <section>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter message..." required></textarea>
+                    </section>
+                    <section id="agree">
+                        <input type="checkbox" id="policy" name="policy" value="true" required/>
+                        <label for="policy">You agree to our policies.</label>
+                    </section>
+                    <section>
+                        <input class="btn" type="submit" value="Submit" />
+                    </section>
+                </form>
+            </section>
+        </article>
+        <main>
+            <article class="cover">
+            </article>
+            <article id="itinerary">
+                <h2 class="title">Tour Package</h2>
+                <section class="ddown">
+                    <section onclick="toggleDropdown(this)">
+                        <p>Inclusions and Exclusions</p>
+                        <section class="line">
+                        </section>
+                        <span class="plus"></span>
+                    </section>
+                    <section id="tour" class="ddown-content">
+                        <p><strong>INCLUSIONS</strong></p>
+                        <ul>
+                            <li>Inflight meals</li>
+                            <li>All breakfast meals</li>
+                            <li>Lunch meals allowance</li>
+                            <li>Daily snacks</li>
+                            <li>Dinner (First two nights)</li>
+                            <li>Airport Transfers</li>
+                            <li>Roundtrip Airfare</li>
+                            <li>All Transportation (except optional tour)</li>
+                            <li>Travel Insurance</li>
+                            <li>Travel Tax &#38 Terminal Fees</li>
+                            <li>Guided Tours</li>
+                            <li>4-star Hotel Accommodation based on twin share (3D2N-Rome)</li>
+                            <li>4-star Hotel Accommodation based on twin share (3D3N-Venice)</li>
+                            <li>Daily bottled water</li>
+                            <li>E-sim Data Plan</li>
+                            <li>30 kg. Check-in baggage allowance with 7 kg. Hand Carry</li>
+                            <li>Sightseeings and entrance fees as specified</li>
+                            <li>Professional English-speaking Tour Guide</li>
+                            <li>Pre-departure Orientation</li>
+                            <li>Filipino Tour Escort</li>
+                        </ul>
+                        <p><strong>EXCLUSIONS:</strong></p>
+                        <ul>
+                            <li>Visa fee</li>
+                            <li>Tippings</li>
+                            <li>Food Tour</li>
+                            <li>Extra charges</li>
+                            <li>Optional Tour</li>
+                            <li>Others which are not mentioned in the inclusions</li>
+                        </ul>
+                    </section>
+                </section>
+                <section class="ddown">
+                    <section onclick="toggleDropdown(this)">
+                        <p>Day 1 - March 25, 2024 (Monday)</p>
+                        <section class="line">
+                        </section>
+                        <span class="plus"></span>
+                    </section>
+                    <section id="day1" class="ddown-content">
+                        <h3 class="title">Day 1</h3>
+                        <video controls>
+                            <source src="/res/DAY 1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="title">Technical Itinerary</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><strong>Time</strong></th>
+                                    <th><strong>Activity</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1100H</td>
+                                    <td>ETA at Fiumicino Airport</td>
+                                </tr>
+                                <tr>
+                                    <td>1200H</td>
+                                    <td>Lunch at Bistrot Fiumicino</td>
+                                </tr>
+                                <tr>
+                                    <td>1300H</td>
+                                    <td>Travel to Mercure Leonardo Da Vinci Rome Airport via Nolegiarre</td>
+                                </tr>
+                                <tr>
+                                    <td>1400H</td>
+                                    <td>Check-in at Mercure Leonardo Da Vinci Rome Airport</td>
+                                </tr>
+                                <tr>
+                                    <td>1500H</td>
+                                    <td>Travel to Parco Leonardo via Nolegiarre</td>
+                                </tr>
+                                <tr>
+                                    <td>1510H</td>
+                                    <td>Arrived at Parco Leonardo</td>
+                                </tr>
+                                <tr>
+                                    <td>1530H</td>
+                                    <td>Snacks at Parco Leonardo</td>
+                                </tr>
+                                <tr>
+                                    <td>1715H</td>
+                                    <td>Travel to St. Angelo Bridge via Nolegiarre</td>
+                                </tr>
+                                <tr>
+                                    <td>1830H</td>
+                                    <td>Start of Roman Night Tour at Dark Heart of Rome</td>
+                                </tr>
+                                <tr>
+                                    <td>2000H</td>
+                                    <td>Travel to Hostaria Farnese via Nolegiarre</td>
+                                </tr>
+                                <tr>
+                                    <td>2015H</td>
+                                    <td>Dinner at Hostaria Farnese</td>
+                                </tr>
+                                <tr>
+                                    <td>2115H</td>
+                                    <td>Travel back to Mercure Leonardo Da Vinci Rome Airport</td>
+                                </tr>
+                                <tr>
+                                    <td>2215H</td>
+                                    <td>Rest</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </section>
+                <section class="ddown">
+                    <section onclick="toggleDropdown(this)">
+                        <p>Day 2 - March 26, 2024 (Tuesday)</p>
+                        <section class="line">
+                        </section>
+                        <span class="plus"></span>
+                    </section>
+                    <section id="day2" class="ddown-content">
+                        <h3 class="title">Day 2</h3>
+                        <video controls>
+                            <source src="/res/DAY 2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="title">Technical Itinerary</p>
+                        <table>
+                            <thead>
+                              <tr>
+                                <th>Time</th>
+                                <th>Activity</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>0700H</td>
+                                <td>Breakfast at Mercure Rome Leonardo Da Vinci Airport</td>
+                              </tr>
+                              <tr>
+                                <td>0830H</td>
+                                <td>Travel to Colosseum</td>
+                              </tr>
+                              <tr>
+                                <td>1000H</td>
+                                <td>Tour at Colosseum</td>
+                              </tr>
+                              <tr>
+                                <td>1100H</td>
+                                <td>Tour at Roman Forum</td>
+                              </tr>
+                              <tr>
+                                <td>1200H</td>
+                                <td>Tour at Palatine Hill</td>
+                              </tr>
+                              <tr>
+                                <td>1300H</td>
+                                <td>Lunch</td>
+                              </tr>
+                              <tr>
+                                <td>1430H</td>
+                                <td>Walk to Spanish Steps</td>
+                              </tr>
+                              <tr>
+                                <td>1520H</td>
+                                <td>Tour at Spanish Steps</td>
+                              </tr>
+                              <tr>
+                                <td>1620H</td>
+                                <td>Tour at Trevi Fountain</td>
+                              </tr>
+                              <tr>
+                                <td>1650H</td>
+                                <td>Tour at Pantheon</td>
+                              </tr>
+                              <tr>
+                                <td>1720H</td>
+                                <td>Tour at Piazza Navona</td>
+                              </tr>
+                              <tr>
+                                <td>1750H</td>
+                                <td>Walk to Colosseum Metro Stop</td>
+                              </tr>
+                              <tr>
+                                <td>1820H</td>
+                                <td>Walk to Osteria Angelino dal 1899</td>
+                              </tr>
+                              <tr>
+                                <td>1830H</td>
+                                <td>Dinner at Osteria Angelino dal 1899</td>
+                              </tr>
+                              <tr>
+                                <td>2000H</td>
+                                <td>Travel to Mercure Rome Leonardo Da Vinci Airport</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </section>
+                </section>
+                <section class="ddown">
+                    <section onclick="toggleDropdown(this)">
+                        <p>Day 3 - March 27, 2024 (Wednesday)</p>
+                        <section class="line">
+                        </section>
+                        <span class="plus"></span>
+                    </section>
+                    <section id="day3" class="ddown-content">
+                        <h3 class="title">Day 3</h3>
+                        <video controls>
+                            <source src="/res/DAY 3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="title">Technical Itinerary</p>
+                        <p class="title">TOUR 1 - 1200/HEAD</p>
+                        <table>
+                            <thead>
+                              <tr>
+                                <th>Time</th>
+                                <th>Activity</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>0715H</td>
+                                <td>ETD from Rome via train</td>
+                              </tr>
+                              <tr>
+                                <td>1030H</td>
+                                <td>Tour at Piazza del Duomo</td>
+                              </tr>
+                              <tr>
+                                <td>1045H</td>
+                                <td>ETD to Battistero Di San Giovanni</td>
+                              </tr>
+                              <tr>
+                                <td>1052H</td>
+                                <td>Tour at Battistero Di San Giovanni</td>
+                              </tr>
+                              <tr>
+                                <td>1102H</td>
+                                <td>ETD to Camminamento in Quota Sulle Mura Di Pisa</td>
+                              </tr>
+                              <tr>
+                                <td>1105H</td>
+                                <td>Tour at Camminamento In Quota Sulle Mura Di Pisa</td>
+                              </tr>
+                              <tr>
+                                <td>1110H</td>
+                                <td>ETD to Cattedrale Di Pisa</td>
+                              </tr>
+                              <tr>
+                                <td>1115H</td>
+                                <td>Tour at Cattedrale Di Pisa</td>
+                              </tr>
+                              <tr>
+                                <td>1135H</td>
+                                <td>ETD to Leaning Tower of Pisa</td>
+                              </tr>
+                              <tr>
+                                <td>1140H</td>
+                                <td>Tour at Leaning Tower of Pisa</td>
+                              </tr>
+                              <tr>
+                                <td>1220H</td>
+                                <td>ETD to Piazza Del Duomo</td>
+                              </tr>
+                              <tr>
+                                <td>1330H</td>
+                                <td>Lunch</td>
+                              </tr>
+                            </tbody>
+                        </table>                      
+                        <p class="title">TOUR 2 - 2400/HEAD</p>
+                        <table>
+                            <thead>
+                              <tr>
+                                <th>Time</th>
+                                <th>Activity</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1420H</td>
+                                <td>Starting point at Santa Croce Bistrot</td>
+                              </tr>
+                              <tr>
+                                <td>1420H</td>
+                                <td>ETD from Ponte Vecchio to Ponte Santa Trinita Renaissance Bridge via golf cart</td>
+                              </tr>
+                              <tr>
+                                <td>1430H</td>
+                                <td>ETA at Ponte Santa Trinita Renaissance Bridge</td>
+                              </tr>
+                              <tr>
+                                <td>1435H</td>
+                                <td>ETD from Ponte Santa Trinita Renaissance Bridge to Arno Oltrarno Area via golf cart</td>
+                              </tr>
+                              <tr>
+                                <td>1445H</td>
+                                <td>ETA at Arno Oltrarno Area</td>
+                              </tr>
+                              <tr>
+                                <td>1450H</td>
+                                <td>ETD from Arno Oltrarno Area to Palazzo Pitti via Golf cart</td>
+                              </tr>
+                              <tr>
+                                <td>1500H</td>
+                                <td>ETA at Palazzo Pitti</td>
+                              </tr>
+                              <tr>
+                                <td>1505H</td>
+                                <td>ETD from Palazzo Pitti to Vasari Corridor via Golf cart</td>
+                              </tr>
+                              <tr>
+                                <td>1520H</td>
+                                <td>ETA at Vasari Corridor</td>
+                              </tr>
+                              <tr>
+                                <td>1525H</td>
+                                <td>ETD from Vasari Corridor to Basilica of Santa Croce via Golf cart</td>
+                              </tr>
+                              <tr>
+                                <td>1545H</td>
+                                <td>ETA at Basilica of Santa Croce</td>
+                              </tr>
+                              <tr>
+                                <td>1550H</td>
+                                <td>ETD from Basilica of Santa Croce to Florence National Central Library via Golf cart</td>
+                              </tr>
+                              <tr>
+                                <td>1610H</td>
+                                <td>ETA at Florence National Central Library</td>
+                              </tr>
+                              <tr>
+                                <td>1615H</td>
+                                <td>ETD from Florence National Central Library to Brunelleschi Dome via Golf cart</td>
+                              </tr>
+                              <tr>
+                                <td>1630H</td>
+                                <td>ETA at Brunelleschi Dome</td>
+                              </tr>
+                              <tr>
+                                <td>1635H</td>
+                                <td>ETD from Brunelleschi Dome to Florence Center Train Station via Golf cart</td>
+                              </tr>
+                              <tr>
+                                <td>1655H</td>
+                                <td>ETA at Florence Center Train Station</td>
+                              </tr>
+                              <tr>
+                                <td>1700H</td>
+                                <td>ETD from Florence Center Train Station to Ognissanti District Florence via Golf cart</td>
+                              </tr>
+                              <tr>
+                                <td>1730H</td>
+                                <td>ETA at Ognissanti District Florence</td>
+                              </tr>
+                              <tr>
+                                <td>1730H</td>
+                                <td>ETD from Ognissanti District Florence via Golf cart to bus</td>
+                              </tr>
+                              <tr>
+                                <td>1740H</td>
+                                <td>ETA at bus</td>
+                              </tr>
+                              <tr>
+                                <td>1740H</td>
+                                <td>ETD to Venice hotel via bus</td>
+                              </tr>
+                              <tr>
+                                <td>2040H</td>
+                                <td>ETA to Venice hotel</td>
+                              </tr>
+                            </tbody>
+                        </table>                                            
+                    </section>
+                </section>
+                <section class="ddown">
+                    <section onclick="toggleDropdown(this)">
+                        <p>Day 4 - March 28, 2024 (Thursday)</p>
+                        <section class="line">
+                        </section>
+                        <span class="plus"></span>
+                    </section>
+                    <section id="day4" class="ddown-content">
+                        <h3 class="title">Day 4</h3>
+                        <video controls>
+                            <source src="/res/DAY 4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="title">Technical Itinerary</p>
+                        <table>
+                            <thead>
+                              <tr>
+                                <th>Time</th>
+                                <th>Activity</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>0700H</td>
+                                <td>Breakfast at Hotel</td>
+                              </tr>
+                              <tr>
+                                <td>0800H</td>
+                                <td>Walk from hotel to Rialto Bridge</td>
+                              </tr>
+                              <tr>
+                                <td>0815H</td>
+                                <td>ETA in Rialto Bridge and Rialto fish market</td>
+                              </tr>
+                              <tr>
+                                <td>1015H</td>
+                                <td>Walk from Rialto bridge to Grand canal</td>
+                              </tr>
+                              <tr>
+                                <td>1030H</td>
+                                <td>ETA in Cruise along grand canal via Gondola ride</td>
+                              </tr>
+                              <tr>
+                                <td>1110H</td>
+                                <td>Lunch at La Porta D'Acqua</td>
+                              </tr>
+                              <tr>
+                                <td>1230H</td>
+                                <td>Leave for Basilica di San Marco</td>
+                              </tr>
+                              <tr>
+                                <td>1235H</td>
+                                <td>ETA Tour at  Basilica di San Marco</td>
+                              </tr>
+                              <tr>
+                                <td>1330H</td>
+                                <td>Start of Tour at Doge’s Palace</td>
+                              </tr>
+                              <tr>
+                                <td>1510H</td>
+                                <td>Walk from Doge’s Palace back to the Hotel</td>
+                              </tr>
+                              <tr>
+                                <td>1530H</td>
+                                <td>Free time/Optional tour</td>
+                              </tr>
+                            </tbody>
+                        </table>                      
+                    </section>
+                </section>
+                <section class="ddown">
+                    <section onclick="toggleDropdown(this)">
+                        <p>Day 5 - March 29, 2024 (Friday)</p>
+                        <section class="line">
+                        </section>
+                        <span class="plus"></span>
+                    </section>
+                    <section id="day5" class="ddown-content">
+                        <h3 class="title">Day 5</h3>
+                        <video controls>
+                            <source src="/res/DAY 5.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="title">Technical Itinerary</p>
+                        <table>
+                            <thead>
+                              <tr>
+                                <th>Time</th>
+                                <th>Activity</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>0500H</td>
+                                <td>Travel to Milan (via Trenitalia: Venezia S. Lucia Station to Milano Centrale Station)</td>
+                              </tr>
+                              <tr>
+                                <td>0800H</td>
+                                <td>Breakfast</td>
+                              </tr>
+                              <tr>
+                                <td>0900H</td>
+                                <td>City Sightseeing Hop-on, Hop-off</td>
+                              </tr>
+                              <tr>
+                                <td>1800H</td>
+                                <td>San Babila to Milan Linate Airport (via Uber) + Free Day</td>
+                              </tr>
+                              <tr>
+                                <td>2000H</td>
+                                <td>Dinner</td>
+                              </tr>
+                              <tr>
+                                <td>2300H</td>
+                                <td>Flight departure LIN-MNL</td>
+                              </tr>
+                            </tbody>
+                        </table>                  
+                    </section>
+                </section>
+                <section class="ddown">
+                    <section onclick="toggleDropdown(this)">
+                        <p>Costing</p>
+                        <section class="line">
+                        </section>
+                        <span class="plus"></span>
+                    </section>
+                    <section id="costing" class="ddown-content">
+                      <h2>Cost Breakdown:</h2>
+                      <ul>
+                        <li><strong>Base Fare:</strong> ₱87,529.17</li>
+                        <li><strong>Taxes &#38 Surcharges:</strong> ₱11,610.78</li>
+                        <li><strong>Travel Insurance:</strong> ₱4,450.70</li>
+                        <li><strong>PH Tax:</strong> ₱1,620</li>
+                        <li><strong>Total Cost of Flight:</strong> ₱105,210.65</li>
+                      </ul>
+                      <h2>Cost of Food:</h2>
+                      <ul>
+                        <li><strong>Lunch:</strong> ₱15,000 (Meal allowance for 5 days)</li>
+                        <li><strong>Dinner (First two nights):</strong> ₱6,250</li>
+                        <li><strong>Snacks:</strong> ₱6,250 (Allowance for 5 days)</li>
+                        <li><strong>Bottled Water:</strong> ₱137.50 (1 bottle per day)</li>
+                        <li><strong>Total Cost of Food:</strong> ₱27,637.50</li>
+                      </ul>
+                      <h2>Cost of Accommodation:</h2>
+                      <ul>
+                        <li><strong>Mercure Rome Leonardo Da Vinci Airport:</strong> ₱16,385.28</li>
+                        <li><strong>B&B La Rosa Dei Venti:</strong> ₱9,600.08</li>
+                        <li><strong>Total Cost of Accommodation:</strong> ₱25,985.36</li>
+                      </ul>
+                      <h2>Cost of Transportation:</h2>
+                      <ul>
+                        <li><strong>Car Rental:</strong> ₱1,052.20</li>
+                        <li><strong>Train:</strong> ₱4,685</li>
+                        <li><strong>Bus:</strong> ₱1,425.22</li>
+                        <li><strong>Open Top Bus:</strong> ₱1,337.50</li>
+                        <li><strong>Total Cost of Transportation:</strong> ₱8,499.92</li>
+                      </ul>
+                      <h2>Cost of Registration/Entrance Fees:</h2>
+                      <ul>
+                        <li><img src="res/reg.jpg" width="300px"></li>
+                        <li><strong>Registration/Entrance Fees:</strong> ₱22,603.75</li>
+                      </ul>
+                      <h2>Cost of Freebies:</h2>
+                      <ul>
+                        <li><strong>Totebag:</strong> ₱150.00</li>
+                        <li><strong>Keychain:</strong> ₱75.00</li>
+                        <li><strong>E-sim:</strong> ₱362.50</li>
+                        <li><strong>Total Cost of Freebies:</strong> ₱587.50</li>
+                      </ul>
+                      <h2>Total Cost of the Tour Package:</h2>
+                      <ul>
+                        <li><strong>Total Cost of the Tour Package:</strong> ₱190,524.68</li>
+                      </ul>
+                    </section>
+                </section>
+            </article>
+            <!-- Footer Section -->
+            <footer>
+                <section id="contact">
+                    <section>
+                        <p>Go Gusto</p>
+                        <p>At Go Gusto, we believe that travel is not just about the destination, but the experience. Our team of travel experts is dedicated to creating unforgettable journeys for travelers exploring Italy. let us be your guide to the wonders of this beautiful country.</p>
+                    </section>
+                    <section>
+                        <p>About Us</p>
+                        <a href="aboutus.html#mission-vision">Our Mission</a>
+                        <a href="aboutus.html#mission-vision">Our Vision</a>
+                        <a href="aboutus.html#why-choose-us">Why Choose Us</a>
+                    </section>
+                    <section>
+                        <p>Terms and Conditions</p>
+                        <a href="terms.html">Cancellation Policy</a>
+                        <a href="terms.html">Refund Policy</a>
+                        <a href="terms.html">Mode of Payment</a>
+                        <a href="terms.html">Deadline of Payment</a>
+                    </section>
+                    <section>
+                        <section>
+                            <p>Address</p>
+                            <p>Cavite, Philippines</p>
+                        </section>
+                        <section>
+                            <p>Inquiries</p>
+                            <p>(046) 431-8726</p>
+                            <p>info@gogustotravel.com</p>
+                        </section>
+                        <section>
+                            <!-- Social Media Icons -->
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        </section>
+                    </section>
+                    <section>
+                        <p>Subscribe to Our Newsletter</p>
+                        <p>Keep updated with our latest packages:</p>
+                        <section>
+                        <form>
+                            <input type="email" id="email-letter" name="letter" placeholder="Enter your email..." required>
+                            <button class="btn">Subscribe</button>
+                        </form>
+                        </section>
+                    </section>
+                </section>
+                <hr/>
+                <section>
+                    <p>Disclaimer: All images used on this website and the website itself are for illustrative and educative purposes only.</p>
+                    <p>© 2023 Go Gusto. All rights reserved.</p>
+                </section>
+            </footer>
+        </main>
+        <!-- JavaScript Code -->
+        <script>
+            // Functionality to show/hide dropdown content of a dropdown
+            function toggleDropdown(element) {
+                const content = element.nextElementSibling;
+                const symbol = element.querySelector('span');
+    
+                if (content.style.display === 'flex') {
+                    content.style.display = 'none';
+                    symbol.classList.remove('cross');
+                    symbol.classList.add('plus');
+                } else {
+                    content.style.display = 'flex';
+                    symbol.classList.remove('plus');
+                    symbol.classList.add('cross');
+                }
+            }
+
+            // Functionality to show/hide the contact form
+            document.addEventListener("DOMContentLoaded", function () {
+                const closeButton = document.getElementById("close-btn");
+                const form = document.getElementById("form");
+                const formBtn = document.getElementById("form-btn");
+        
+                closeButton.addEventListener("click", function () {
+                    form.style.opacity = 0;
+                    form.style.pointerEvents = "none";
+                });
+
+                formBtn.addEventListener("click", function () {
+                    form.style.opacity = 1;
+                    form.style.pointerEvents = "auto";
+                });
+            });
+
+            // JavaScript to change header background color when scrolling
+            window.addEventListener("scroll", function() {
+                const header = document.getElementById("header");
+                const scrollPosition = window.scrollY;
+
+                if (scrollPosition >= 100) {
+                    // When scrolled down to 100vh or more
+                    header.classList.add("transparent-bg");
+                }
+                else {
+                    // When not scrolled down to 100vh
+                    header.classList.remove("transparent-bg");
+                }
+            });
+        </script>
+    </body>
+</html>

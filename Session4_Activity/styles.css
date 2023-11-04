@@ -1,3 +1,83 @@
+/*
+    1. padding: Specifies the padding inside an element.
+
+    2. margin: Sets the margin around an element.
+
+    3. font-family: Defines the font used for text.
+
+    4. width: Specifies the width of an element.
+
+    5. display: Determines how an element is displayed (e.g., block, flex, etc.).
+
+    6. flex-direction: Sets the direction of flexible items in a flex container.
+
+    7. align-items: Defines the alignment of items in a flex container.
+
+    8. background-image: Specifies an image as the background of an element.
+
+    9. background-size: Sets the size of the background image.
+
+    10. background-attachment: Controls whether the background image is fixed or scrolls with the content.
+
+    11. font-weight: Specifies the thickness of the font.
+
+    12. color: Sets the text color.
+
+    13. font-size: Defines the size of the font.
+
+    14. text-shadow: Adds a shadow effect to text.
+
+    15. text-decoration: Controls text decoration (e.g., underline, none).
+
+    16. text-align: Specifies the horizontal alignment of text.
+
+    17. border-radius: Defines the radius of the element's corners.
+
+    18. height: Sets the height of an element.
+
+    19. position: Defines the positioning method of an element.
+
+    20. top: Sets the top position of an element.
+
+    21. box-shadow: Adds a shadow to an element.
+
+    22. z-index: Determines the stack order of elements.
+
+    23. list-style-type: Sets the type of bullet for a list.
+
+    24. gap: Specifies the gap between flex items in a container.
+
+    25. right: Sets the right position of an element.
+
+    26. left: Sets the left position of an element.
+
+    27. flex-wrap: Controls how items wrap in a flex container.
+
+    28. background-color: Sets the background color of an element.
+
+    29 .border: Defines the border around an element.
+
+    30. max-width: Specifies the maximum width of an element.
+
+    31. cursor: Defines the type of cursor to be displayed when hovering over an element.
+
+    32. transition: Specifies transition effects for CSS properties.
+
+    33. justify-content: Aligns items in the horizontal direction in a flex container.
+
+    34. border-collapse: Specifies whether table borders should collapse into a single border or be separated.
+
+    35. border-spacing: Sets the spacing between adjacent borders in a table.
+
+    36. object-fit: Specifies how an element's content is fitted to its container.
+
+    37. aspect-ratio: Sets the aspect ratio of an element.
+
+    38. border-bottom: Defines the bottom border of an element.
+
+    39. border-radius: Specifies the radius of an element's border corners.
+*/
+
 body {
     padding: 0px;
     margin: 0px;
@@ -11,30 +91,52 @@ body {
     background-attachment: fixed;
 }
 
-h1, .title {
+h1 {
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: white;
-    text-shadow: 1px 1px 4px #000000;
+    font-size: 30px;
+    text-shadow: 1px 1px 4px black;
+    display: none;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 30px;
 }
 
 h2 {
+    font-family: 'Playfair Display', serif;
     font-weight: 400;
+    margin: initial 20px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 0px;
 }
 
 p {
     font-weight: 300;
+    margin: initial 20px;
 }
 
+
+/*header styles*/
 header {
-    background-image: url('res/rome.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
+    height: 80px;
+    margin: 30px;
+    width: 95%;
+    max-width: 2000px;
+    transition: 0.5s;
+    border-radius: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
 }
 
 nav {
@@ -42,38 +144,43 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow: 1px 1px 4px #000000;
     flex-wrap: wrap;
 }
 
 nav a {
     width: max-content;
-    text-decoration: none;
-    margin: 20px;
+    margin: 0px 20px;
+    padding: 10px;
+    border-radius: 20px;
     color: white;
+    text-decoration: none;
 }
 
-.btn {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    padding: 10px;
-    background-color: #ECB800;
-    border-radius: 300px;
-    text-align: center;
+nav a:hover, .act {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.5);
+}
+
+#menu {
+    display: none;
+}
+
+#menu-btn {
+    color: white;
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 100%;
+    display: none;
+}
+
+#menu-content {
+    display: none;
 }
 
 .logo {
-    width: 50px;
-    border-radius: 100%;
+    width: 80px;
     padding: 10px;
-    margin: 20px;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     top: 100px;
-}
-
-main {
-    max-width: 2000px;
 }
 
 .logo-container {
@@ -82,7 +189,35 @@ main {
     align-items: center;
 }
 
+.transparent-bg {
+    background: rgba(0,0,0,0.5);
+}
+
+/*button stles*/
+.btn {
+    transition: 0.3s;
+    color: white;
+    text-shadow: 1px 1px 4px #000000;
+    padding: 10px;
+    background-color: #ECB800;
+    border-radius: 300px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: red;
+}
+
+main {
+    width: 100%;
+    max-width: 2000px;
+}
+
+/*home section styles*/
 #home {
+    background: rgba(0,0,0,0.4);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -95,7 +230,7 @@ main {
 .cta {
     font-size: 50px;
     text-shadow: 1px 1px 4px #000000;
-    margin: 100px 20px 50px 20px;
+    margin: 120px 20px 50px 20px;
 }
 
 #home section {
@@ -107,85 +242,690 @@ main {
 
 #home p {
     font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 4px #000000;
 }
 
 #home p:last-child {
-    text-shadow: 1px 1px 4px #000000;
     max-width: 80%;
     margin: 10px auto 50px auto;
 }
 
+/*about section styles*/
 #about {
     background-color: white;
     text-align: center;
     position: relative;
+    padding-top: 20px;
+}
+
+#overview {
+    align-items: center;
 }
 
 #partners {
-    background-color: rgb(56, 129, 163);
+    background-color: lightgray;
+    margin-top: 50px;
+    padding: 30px 0px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    color: white;
+}
+
+.banner {
+    background-image: url("res/banners.png");
+    background-size: cover;
+    background-position: center;
     width: 100%;
+    height: 115px;
 }
 
 section#partners img {
-    text-shadow: 1px 1px 4px #000000;
     height: 100%;
     max-height: 50px;
     width: auto;
+    padding: 40px;
 }
 
 #about h2 {
-    margin: 30px 0px 40px 0px;
-    font-weight: 700;
     color: black;
-    font-size: 30px;
-    text-shadow: 1px 1px 4px white;
 }
+
 
 #about img {
     width: 100%;
     min-width: 200px;
-    max-width: 300px;
-    padding: 40px;
+    max-width: 500px;
 }
 
 .description-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     text-align: left;
-    gap: 20px;
     flex-wrap: wrap;
+    margin: 0px 20px;
+}
+
+.description-container > section {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 20px;
 }
 
 .description-container p {
-    color: black;
-    max-width: 500px;
+    text-indent: 40px;
     text-align: justify;
+    max-width: 500px;
 }
 
-.description-container p:first-child {
-    margin: 20px;
-    font-size: 25px;
+/*Tour Package Section styles*/
+#destinations {
+    padding-top: 130px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slideshow h2 {
+    text-align: center;
+    font-size: 50px;
+    margin: 10px;
+}
+
+.slideshow {
+    color: white;
+    border-radius: 50px;
+    width: 90%;
+    height: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 10px black;
+    text-shadow: 1px 1px 4px black;
+    background-image: url(res/colosseum.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    animation: slider 20s infinite linear;
+    z-index: 2;
+    position: absolute;
+    top: -50px;
+}
+
+#package {
+    padding-top: 500px;
+    padding-bottom: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to bottom, white, lightgray, gray, lightgray, gray, lightgray, black);
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 4px #000000;
+}
+
+#package > section:not(:first-child) {
+    width: 100%;
+}
+
+#package > p.title {
+    margin: 30px 20px;
+}
+
+#package > p:nth-child(2) {
+    font-size: 50px;
+}
+
+#package > p:nth-child(3) {
+    max-width: 1000px;
+    margin: 0px 20px 40px 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#package img {
+    width: 100%;
+    max-width: 450px;
+    min-width: 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.5);
+}
+
+.travel-container {
+    padding: 0px 20px;
+    display: flex;
+    height: 400px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+}
+
+.travel-container:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.travel-container section:first-child p {
+    width: 100%;
+    max-width: 450px;
+    min-width: 10px;
+}
+
+.travel-container section:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    width: 0px;
+    height: 100%;
+    max-height: 500px;
+    border: 2px solid #ECB800;
+    padding: 0;
+}
+
+.travel-container section:nth-child(2) p{
+    margin: 0px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #ECB800;
+    padding: 17px 25px;
+    color: black;
     text-shadow: 1px 1px 4px white;
 }
 
-.description-container p:last-child{
+/*footer styls*/
+footer i {
+    font-size: 30px;
+}
+
+footer {
+    padding: 10px 0px;
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+footer section:not(:last-child) p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 1px 1px 4px black;
+}
+
+footer > section, footer > p {
     margin: 20px;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: first baseline;
+    flex-wrap: wrap;
+    gap: 20px
+}
+
+#contact > section:first-child p {
+    max-width: 200px;
+}
+
+.newsletter {
+    flex-wrap: nowrap
+}
+
+hr {
+    margin-top: 40px;
+    width: 97%;
+}
+
+#contact > section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+footer > section:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+footer a:hover {
+    font-size: 16px;
+    text-shadow: 5px 5px 5px white;
+}
+
+
+/*Contact Form Styles*/
+input {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.form {
+    font-size: 10px;
+    z-index: 8;
+    position: fixed;
+    color: white;
+    background: rgba(0,0,0,0.75);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s;
+}
+
+.close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 6;
+    font-size: 20px;
+}
+
+.close:hover {
+    text-shadow: 1px 1px 5px white;
+}
+
+.close input {
+    display: none;
+}
+
+.form input {
+    font-size: 10px;
+    border-radius: 10px;
+}
+
+.form label {
+    padding-left: 5px;
+}
+
+.form > section:first-child {
+    box-shadow: 2px 2px 10px 1px white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 70%;
+    max-width: 300px;
+    background-color: black;
+    border-radius: 50px;
+    gap: 10px;
+}
+
+form {
+    width: 100%;
+    max-width: 300px;
+}
+
+form > section:first-child {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+form > section > section {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+
+#agree {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#message {
+    font-size: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+}
+
+form > section:not(:first-child) {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+/*aboutUs styles*/
+#about-body {
+    background-image: url('res/colosseum.jpg');
+}
+.cover {
+    background: rgba(0,0,0,0.4);
+    min-height: 200px;
+    width: 100%;
+}
+
+#about.about-us {
+    padding-bottom: 50px;
+}
+
+#tagline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: lightgray;
+    color: black;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+#tagline section {
+    margin: 20px;
+}
+
+#tagline p {
+    margin: 20px;
+    text-align: justify;
     text-indent: 40px;
 }
 
+#whychooseus {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+#whychooseus section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+#whychooseus > section > section {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.2);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#whychooseus i {
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px 4px yellow;
+}
+
+#whychooseus section p:nth-child(2) {
+    font-size: 20px;
+}
+
+/*terms and conditions styles */
+.terms-conditions {
+    background-color: white;
+    text-align: justify;
+    padding: 50px 0px;
+}
+
+.terms-conditions {
+    padding: 50px 40px;
+}
+
+.terms-conditions dl > dt {
+    font-size: 25px;
+}
+
+.terms-conditions section > p {
+    text-align: center;
+}
+
+/*Tour Package styles*/
+video {
+    width: 80%;
+    margin: 20px;
+    border-radius: 20px;;
+    box-shadow: 0 0 10px 3px black;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+}
+
+#itinerary p.title {
+    font-size: 20px;
+}
+
+#itinerary {
+    background-color: white;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#itinerary h3 {
+    font-size: 25px;
+}
+
+/* Style the table */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the table header (th) */
+table th {
+background-color: #333;
+color: white;
+padding: 12px;
+text-align: left;
+}
+
+/* Style the table data cells (td) */
+table td {
+padding: 8px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+
+/* Add a background color to alternating rows for better readability */
+table tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+
+/* Hover effect on table rows */
+table tr:hover {
+background-color: #ddd;
+}
+
+/* Style the table caption (optional) */
+table caption {
+font-weight: bold;
+padding: 10px;
+background-color: #333;
+color: white;
+text-align: center;
+}
+
+/* Add borders to the header and footer of the table */
+table thead th {
+border: 2px solid #333;
+}
+
+table tfoot td {
+border: 2px solid #333;
+}
+
+/* Add some spacing and rounded corners to the table */
+table {
+border-radius: 5px;
+margin: 0 auto;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style links within the table */
+table a {
+color: #333;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+table a:hover {
+color: #666;
+}
+
+/* Center the text in the header cells */
+table th {
+text-align: center;
+}
+
+#itinerary > section.ddown {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Basic styling for the dropdown */
+
+section.ddown > section:first-child {
+    width: 80%;
+    cursor: pointer;
+    height: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+    box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.2);
+}
+
+#itinerary > section.ddown > section > section {
+    width: 30%;
+    border: 1px solid lightgray;
+}
+
+
+#itinerary .ddown-content {
+    display: none;
+    flex-direction: column;
+    justify-items: center;
+    gap: 20px;
+    padding: 50px;
+    align-items: center;
+}
+
+/* Styling for the plus and x symbols */
+.plus:before {
+    content: "+";
+}
+.cross:before {
+    content: "×";
+}
+
+
 /*for responsive*/
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     h1 {
         display: none;
     }
 
     nav a {
         margin: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    #menu-btn {
+        display: block;
+    }
+
+    #menu-content {
+        display: none;
+        position: fixed;
+        top: 100px;
+        flex-direction: column;
+        align-items: end;
+        z-index: -1;
+        right: 10%;
+    }
+
+    nav section:first-child {
+        display: none;
+    }
+    
+    #menu-content a {
+        background-color: #ECB800;
+        color: white;
+        transition: all 0.5s;
+        text-shadow: 1px 1px 4px #000000;
+        border-radius: 300px;
+        box-shadow: 0px 0px 0px #000000;
+    }
+
+    #menu-content a:hover, .act, #menu-content a:first-child{
+        text-shadow: 0 0 10px black;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-color: red;
+    }
+
+    #menu:checked ~ section {
+        display: flex;
+        animation-name: insert;
+        animation-duration: 1s;
+    }
+
+    #menu:checked ~ #menu-btn {
+        text-shadow: 0 0 10px black;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-color: red;
+    }
+}
+
+@keyframes insert {
+    from {
+        top: 40px;
+    }
+
+    to {
+        top: 100px;
+    }
+}
+
+@keyframes slider {
+    0% {
+        background-image: url("res/colosseum.jpg");
+    }
+    33% {
+        background-image: url("res//trevi.jpg");
+    }
+
+    66% {
+        background-image: url("res/doge.jpg");
     }
 }

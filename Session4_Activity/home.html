@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+    <head>
+        <!-- Document Metadata -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="John Yrrah Cabiles">
+
+        <!-- Favicon and Styles -->
+        <link rel="icon" type="image/x-icon" href="res/GoGustoLogo.svg">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f4f1b8744c.js" crossorigin="anonymous"></script>
+
+        <!-- Page Title -->
+        <title>Go Gusto</title>
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header id="header">
+            <section class="logo-container">
+                <img src="res/GoGustoLogo.svg" class="logo" alt="Go Gusto Logo"/>
+                <h1>Go Gusto</h1>
+            </section>
+            <nav>
+                <section>
+                    <!-- Navigation Links -->
+                    <a href="home.html" class="act">Home</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="itinerary.html">Tour Package</a>
+                    <a href="terms.html">Terms &#38 Conditioms</a>
+                    <a href="#contact">Contact Us</a>
+                </section>
+                <a class="btn" id="form-btn">Start Your Journey</a>
+                <input type="checkbox" id="menu">
+                <label for="menu" class="btn" name="menu-btn" id="menu-btn" title="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <section id="menu-content">
+                    <!-- Mobile Menu Links -->
+                    <a href="home.html" class="act">Home</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="itinerary.html">Tour Package</a>
+                    <a href="terms.html">Terms &#38 Conditions</a>
+                    <a href="#contact">Contact Us</a>
+                </section>
+            </nav>
+        </header>
+        <!-- Contact Form -->
+        <article class="form" id="form">
+            <section>
+                <section class="close">
+                    <input type="checkbox" id="close">
+                    <label for="close" name="close-btn" id="close-btn" title="Close">
+                        <i class="fas fa-window-close"></i>
+                    </label>
+                </section>
+                <section>
+                    <h2 class="title">Start Your Journey</h2>
+                    <p>Have questions or ready to book your dream trip? Contact us today and our friendly team will assist you.</p>
+                </section>
+                <form>
+                    <section>
+                        <section>
+                            <label for="firstName">First Name</label>
+                            <input type="text" placeholder="Enter first name..." name="firstName" id="firstName" required/>
+                        </section>
+                        <section>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" placeholder="Enter last name..." name="lastName" id="lastName" required/>
+                        </section>
+                    </section>
+                    <section>
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Enter email..."  name="email" id="email" required/>
+                    </section>
+                    <section>
+                        <label for="phone">Phone Number (e.g. 09123456789)</label>
+                        <input type="tel" id="phone" placeholder="Enter phone number..." name="phone" pattern="[0-9]{11}" required/>
+                    </section>
+                    <section>
+                        <label for="date">When do you plan to travel?</label>
+                        <input type="date" placeholder="dd/mm/yyyy" id="date" name="date" min="2023-11-01" required/>
+                    </section>
+                    <section>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter message..." required></textarea>
+                    </section>
+                    <section id="agree">
+                        <input type="checkbox" id="policy" name="policy" value="true" required/>
+                        <label for="policy">You agree to our policies.</label>
+                    </section>
+                    <section>
+                        <input class="btn" type="submit" value="Submit" />
+                    </section>
+                </form>
+            </section>
+        </article>
+        <!-- Main Content -->
+        <main>
+            <!-- Home Section -->
+            <article id="home">
+                <h2 class="cta">Adventure Awaits: We Plan, You Explore</h2>
+                <section>
+                    <p class="title">Discover the Magic of Italy</p>
+                    <p class="highlight">Experience the beauty, culture, and cuisine of this stunning country with Go Gusto. Our meticulously crafted tour package will take you on an incredible adventure through Rome, Pisa, Florence, Venice, and Milan.</p>
+                </section>
+            </article>
+            <!-- About Us Section -->
+            <article id="about" class="about-us">
+                <section class="banner">
+                </section>
+                <section>
+                    <h2 class="title">About Us</h2>
+                    <section class="description-container" id="overview">
+                        <img src="res/GoGustoLogo.svg" alt="Go Gusto Logo"/>
+                        <section>
+                            <h3 class="title">Go Gusto</h3>
+                            <p>At GoGusto Travel Agency, we believe that everyone deserves to experience the joy of travel. That's why we offer inclusive tour packages that cater to all travelers, regardless of their age, ability, or interests. We believe that travel is about more than just seeing new places; it's about experiencing new cultures, meeting new people, and creating memories that will last a lifetime.</p>
+                            <a href="aboutus.html" class="btn">Learn More</a>
+                        </section>
+                    </section>
+                </section>
+                <section id="partners">
+                    <h2 class="title">Our Trusted Travel Partners</h2>
+                    <section>
+                        <img src="res/bnb.png" alt="Logo"/>
+                        <img src="res/etihad.png" alt="Logo"/>
+                        <img src="res/mercure.png" alt="Logo"/>
+                        <img src="res/pal.png" alt="Logo"/>
+                    </section>
+                </section>
+            </article>
+            <!-- Tour Package Section -->
+            <article id="destinations">
+                <section id="package">
+                    <section class="slideshow">
+                        <h2 class="title highlight">Explore Italy Like Never Before</h2>
+                    </section>
+                    <p class="title" id="head">Tour Package Itinerary</p>
+                    <p>Italy is a land of wonders waiting to be discovered. With our meticulously crafted tour package, you'll have the opportunity to immerse yourself in the beauty, culture, and rich history of this enchanting country.</p>
+                    <section>
+                        <section class="travel-container">
+                            <section>
+                                <h3 class="title">Day 1 - Arrival in Rome:</h3>
+                                <p>Step into the heart of Rome, where history meets modern flair, and get ready for an Italian adventure like no other.</p>
+                            </section>
+                            <section>
+                                <p>1</p>
+                            </section>
+                            <img src="res/castle.jpg"/>
+                        </section>
+                        <section class="travel-container">
+                            <section>
+                                <h3 class="title">Day 2 - Explore Rome:</h3>
+                                <p>Unleash your inner explorer at the Colosseum, toss a coin at the Trevi Fountain, and feast on delectable Italian cuisine.</p>
+                            </section>
+                            <section>
+                                <p>2</p>
+                            </section>
+                            <img src="res/colosseum2.png"/>
+                        </section>
+                        <section class="travel-container">
+                            <section>
+                                <h3 class="title">Day 3 - Tower of Pisa and Florence:</h3>
+                                <p>Lean into Italy's iconic Leaning Tower of Pisa before diving into Florence's artistic and culinary treasures.</p>
+                            </section>
+                            <section>
+                                <p>3</p>
+                            </section>
+                            <img src="res/pisa.png"/>
+                        </section>
+                        <section class="travel-container">
+                            <section>
+                                <h3 class="title">Day 4 - Venice Exploration:</h3>
+                                <p>Embark on a gondola ride through the enchanting waterways of Venice and explore its picturesque landmarks.</p>
+                            </section>
+                            <section>
+                                <p>4</p>
+                            </section>
+                            <img src="res/venice.png"/>
+                        </section>
+                        <section class="travel-container">
+                            <section>
+                                <h3 class="title">Day 5 - Milan and Departure:</h3>
+                                <p>Conclude your journey in the fashion capital, Milan, with stylish shopping and exquisite Italian fare before heading home.</p>
+                            </section>
+                            <section>
+                                <p>5</p>
+                            </section>
+                            <img src="res/duomo.png"/>
+                        </section>
+                    </section>
+                    <p class="title">Ready to Embark on Your Italian Journey?</p>
+                    <a class="btn" href="itinerary.html">Explore Tour Package</a>
+                </section>
+            </article>
+            <!-- Footer Section -->
+            <footer>
+                <section id="contact">
+                    <section>
+                        <p>Go Gusto</p>
+                        <p>At Go Gusto, we believe that travel is not just about the destination, but the experience. Our team of travel experts is dedicated to creating unforgettable journeys for travelers exploring Italy. let us be your guide to the wonders of this beautiful country.</p>
+                    </section>
+                    <section>
+                        <p>About Us</p>
+                        <a href="aboutus.html#mission-vision">Our Mission</a>
+                        <a href="aboutus.html#mission-vision">Our Vision</a>
+                        <a href="aboutus.html#why-choose-us">Why Choose Us</a>
+                    </section>
+                    <section>
+                        <p>Terms and Conditions</p>
+                        <a href="terms.html">Cancellation Policy</a>
+                        <a href="terms.html">Refund Policy</a>
+                        <a href="terms.html">Mode of Payment</a>
+                        <a href="terms.html">Deadline of Payment</a>
+                    </section>
+                    <section>
+                        <section>
+                            <p>Address</p>
+                            <p>Cavite, Philippines</p>
+                        </section>
+                        <section>
+                            <p>Inquiries</p>
+                            <p>(046) 431-8726</p>
+                            <p>info@gogustotravel.com</p>
+                        </section>
+                        <section>
+                            <!-- Social Media Icons -->
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        </section>
+                    </section>
+                    <section class="newsletter">
+                        <p>Subscribe to Our Newsletter</p>
+                        <p>Keep updated with our latest packages:</p>
+                        <section>
+                        <form>
+                            <input type="email" id="email-letter" name="letter" placeholder="Enter your email..." required>
+                            <button class="btn">Subscribe</button>
+                        </form>
+                        </section>
+                    </section>
+                </section>
+                <hr/>
+                <section>
+                    <p>Disclaimer: All images used on this website and the website itself are for illustrative and educative purposes only.</p>
+                    <p>© 2023 Go Gusto. All rights reserved.</p>
+                </section>
+            </footer>
+        </main>
+        <!-- JavaScript Code -->
+        <script>
+            // Functionality to show/hide the contact form
+            document.addEventListener("DOMContentLoaded", function () {
+                const closeButton = document.getElementById("close-btn");
+                const form = document.getElementById("form");
+                const formBtn = document.getElementById("form-btn");
+        
+                closeButton.addEventListener("click", function () {
+                    form.style.opacity = 0;
+                    form.style.pointerEvents = "none";
+                });
+
+                formBtn.addEventListener("click", function () {
+                    form.style.opacity = 1;
+                    form.style.pointerEvents = "auto";
+                });
+            });
+
+            // JavaScript to change header background color when scrolling
+            window.addEventListener("scroll", function() {
+                const header = document.getElementById("header");
+                const scrollPosition = window.scrollY;
+
+                if (scrollPosition >= window.innerHeight) {
+                    // When scrolled down to 100vh or more
+                    header.classList.add("transparent-bg");
+                }
+                else {
+                    // When not scrolled down to 100vh
+                    header.classList.remove("transparent-bg");
+                }
+            });
+        </script>
+    </body>
+</html>

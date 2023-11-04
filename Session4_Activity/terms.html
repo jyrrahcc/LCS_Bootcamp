@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+    <head>
+        <!-- Document Metadata -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="John Yrrah Cabiles">
+
+        <!-- Favicon and Styles -->
+        <link rel="icon" type="image/x-icon" href="res/GoGustoLogo.svg">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f4f1b8744c.js" crossorigin="anonymous"></script>
+
+        <!-- Page Title -->
+        <title>Terms and Conditions</title>
+    </head>
+    <body id="terms-body">
+        <header id="header">
+            <section class="logo-container">
+                <img src="res/GoGustoLogo.svg" class="logo" alt="Go Gusto Logo"/>
+                <h1>Go Gusto</h1>
+            </section>
+            <nav>
+                <section>
+                    <a href="home.html">Home</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="itinerary.html">Tour Package</a>
+                    <a href="terms.html" class="act">Terms &#38 Conditions</a>
+                    <a href="#contact">Contact Us</a>
+                </section>
+                <a class="btn" id="form-btn">Start Your Journey</a>
+                <input type="checkbox" id="menu">
+                <label for="menu" class="btn" name="menu-btn" id="menu-btn" title="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <section id="menu-content">
+                    <a href="home.html">Home</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="itinerary.html">Tour Package</a>
+                    <a href="terms.html" class="act">Terms &#38 Conditions</a>
+                    <a href="#contact">Contact Us</a>
+                </section>
+            </nav>
+        </header>
+        <article class="form" id="form">
+            <section>
+                <section class="close">
+                    <input type="checkbox" id="close">
+                    <label for="close" name="close-btn" id="close-btn" title="Close">
+                        <i class="fas fa-window-close"></i>
+                    </label>
+                </section>
+                <section>
+                    <h2 class="title">Start Your Journey</h2>
+                    <p>Have questions or ready to book your dream trip? Contact us today and our friendly team will assist you.</p>
+                </section>
+                <form>
+                    <section>
+                        <section>
+                            <label for="firstName">First Name</label>
+                            <input type="text" placeholder="Enter first name..." name="firstName" id="firstName" required/>
+                        </section>
+                        <section>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" placeholder="Enter last name..." name="lastName" id="lastName" required/>
+                        </section>
+                    </section>
+                    <section>
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Enter email..."  name="email" id="email" required/>
+                    </section>
+                    <section>
+                        <label for="phone">Phone Number (e.g. 09123456789)</label>
+                        <input type="tel" id="phone" placeholder="Enter phone number..." name="phone" pattern="[0-9]{11}" required/>
+                    </section>
+                    <section>
+                        <label for="date">When do you plan to travel?</label>
+                        <input type="date" placeholder="dd/mm/yyyy" id="date" name="date" min="2023-11-01" required/>
+                    </section>
+                    <section>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter message..." required></textarea>
+                    </section>
+                    <section id="agree">
+                        <input type="checkbox" id="policy" name="policy" value="true" required/>
+                        <label for="policy">You agree to our policies.</label>
+                    </section>
+                    <section>
+                        <input class="btn" type="submit" value="Submit" />
+                    </section>
+                </form>
+            </section>
+        </article>
+        <main>
+            <article class="cover">
+            </article>
+            <article>
+                <section class="terms-conditions">
+                    <h2 class="title">Terms and Conditions</h2>
+                    <section>
+                        <ul>
+                            <li>GoGusto acts as an agent for the suppliers of the services and activities included in the tour package.</li>
+                            <li>GoGusto is not liable for any loss, injury, or damage caused by the negligence or willful misconduct of any supplier.</li>
+                            <li>GoGusto is not liable for any delays or cancellations caused by unforeseen circumstances, such as weather, strikes, or political unrest.</li>
+                          </ul>
+                          
+                          <h2>BOOKING</h2>
+                          <ul>
+                            <li>A deposit of 25% of the total tour price is required to confirm your booking.</li>
+                            <li>The remaining balance must be paid in full 60 days before the start of your tour.</li>
+                            <li>Bookings made within 60 days of the start of the tour must be paid in full at the time of booking.</li>
+                          </ul>
+                          
+                          <h2>CHANGES TO YOUR BOOKING</h2>
+                          <ul>
+                            <li>Changes to your booking, such as changing or adding/removing activities, may be subject to a fee.</li>
+                            <li>Changes to your booking must be made at least 14 days before the start of your tour.</li>
+                          </ul>
+                          
+                          <h2>ADDITIONAL INFORMATION</h2>
+                          <ul>
+                            <li>The accommodation tour price is based on double occupancy. Single occupancy is available at an additional cost.</li>
+                            <li>A valid passport and Schengen Visa is required for all travelers.</li>
+                            <li>GoGusto reserves the right to change the tour itinerary without notice.</li>
+                          </ul>
+                          
+                          <h2>CANCELLATION POLICY</h2>
+                          <ul>
+                            <li>If you are unable to complete your tour for any reason, GoGusto will do its best to provide you with a refund for the unused portion of your tour. However, refunds are not guaranteed and will be subject to the terms and conditions of the individual suppliers.</li>
+                            <li>Cancellations made within 30 days of the start of your tour are non-refundable.</li>
+                            <li>Cancellations made more than 60 days before the start of your tour will receive a full refund, minus a 10% processing fee.</li>
+                            <li>Cancellations made between 60 and 30 days before the start of your tour will receive a 50% refund, minus a 10% processing fee.</li>
+                          </ul>
+                          
+                          <h2>EXCEPTIONS TO THE CANCELLATION POLICY</h2>
+                          <ul>
+                            <li>GoGusto reserves the right to waive or reduce cancellation fees in cases of hardship, such as medical emergencies or job loss.</li>
+                            <li>If GoGusto is forced to cancel a tour for any reason, you will receive a full refund.</li>
+                          </ul>
+                          
+                          <h3>1. HEALTH ISSUES</h3>
+                          <ul>
+                            <li>If you are unable to complete your tour due to a health issue, you may be eligible for a partial refund. However, refunds are not guaranteed and will be subject to the terms and conditions of the individual suppliers.</li>
+                            <li>To request a refund, you must provide GoGusto with a doctor's note stating that you are unable to travel due to a health issue.</li>
+                            <li>GoGusto will review your request and issue you a refund for the unused portion of your tour, minus a processing fee.</li>
+                            <li>If you cancel your tour due to a health issue within 30 days of the start of your tour, you may be subject to additional cancellation fees.</li>
+                          </ul>
+                          <h3>2. FLIGHT DELAYS</h3>
+<ul>
+  <li>If you are unable to join your tour group on time due to a flight delay or cancellation, GoGusto will do our best to accommodate you.</li>
+  <li>GoGusto is not responsible for flight delays or cancellations caused by the airline or other factors beyond our control.</li>
+  <li>If your flight is delayed or cancelled, GoGusto will do our best to assist you in booking a new flight or making other arrangements. However, we cannot guarantee that we will be able to do so, and we are not responsible for any additional costs incurred as a result of a flight delay or cancellation; Except, if your flight is delayed by more than 6 hours, GoGusto will rebook your flights and accommodation at no additional cost to you.</li>
+  <li>GoGusto will provide you with transportation to the airport for your new flight.</li>
+  <li>GoGusto will provide you with a meal and refreshment allowance of 3,000 pesos per day to cover any expenses incurred as a result of the flight delay.</li>
+  <li>If you miss any activities or sightseeing opportunities due to the flight delay, GoGusto will compensate you for the cost of the missed activities.</li>
+  <li>If the flight delay is significant and you are unable to join the tour group, GoGusto will provide you with a full refund.</li>
+</ul>
+
+<h3>3. FLIGHT CANCELLATION</h3>
+<ul>
+  <li>If your flight is cancelled, GoGusto will try its best to rebook your flights and accommodation on a new tour departing at a later date.</li>
+  <li>If GoGusto is unable to rebook your flights and accommodation, you will be eligible for a full refund.</li>
+  <li>GoGusto may also offer you an alternative tour package at a discounted price if you are willing to travel on a different date.</li>
+</ul>
+
+<h3>4. CLIENTS UNABLE TO COMPLETE PAYMENT</h3>
+<ul>
+  <li>If a client is unable to complete payment for a GoGusto tour package, the following terms and conditions will apply:</li>
+  <li>If the client cancels their booking more than 60 days before the start of the tour, they will receive a full refund, minus a 10% processing fee.</li>
+  <li>If the client cancels their booking within 60 days of the start of the tour, they will be subject to the following cancellation fees:</li>
+  <li>=30% of the total tour price if the cancellation is made between 60 and 30 days before the start of the tour.</li>
+  <li>=60% of the total tour price if the cancellation is made within 30 days of the start of the tour.</li>
+  <li>GoGusto reserves the right to waive or reduce cancellation fees in cases of hardship, such as medical emergencies or job loss.</li>
+</ul>
+<h2>HOW TO CANCEL YOUR BOOKING</h2>
+<ul>
+  <li>To cancel your booking, you must contact GoGusto customer service in writing at least 30 days before the start of your tour. All cancellations must be confirmed by GoGusto in writing.</li>
+</ul>
+
+<h2>ADDITIONAL INFORMATION</h2>
+<ul>
+  <li>Cancellation fees are calculated based on the total tour price, including taxes and fees.</li>
+  <li>No refunds will be given for unused portions of a tour.</li>
+  <li>If you cancel your booking after the start of your tour, you will be responsible for any additional costs incurred, such as transportation and accommodation costs.</li>
+  <li>Clients who are unable to complete payment due to unforeseen circumstances may be eligible for a partial refund. However, all partial refund requests are subject to review and approval by GoGusto management.</li>
+</ul>
+
+<h2>REFUND PROCESSING</h2>
+<ul>
+  <li>Once your cancellation has been processed, you will receive a refund within 14 days. Refunds will be issued to the original form of payment used to book your tour.</li>
+  <li>To request a refund, clients must contact GoGusto customer service in writing at least 30 days before the start of their tour. All refund requests must be accompanied by supporting documentation, such as a doctor's note or a letter from an employer.</li>
+</ul>
+
+<p>‼️ GoGusto understands that unforeseen circumstances can arise, and we are committed to working with our clients to find the best possible solution. If you have any questions or concerns about our terms and conditions, please do not hesitate to contact us.</p>
+
+<p>ACCEPTANCE OF TERMS AND CONDITIONS</p>
+<p>* By booking a GoGusto 5-Day Inclusive Tour Package for Italy, you agree to the above terms and conditions.</p>
+
+                          
+                          
+                          <h2>MODE OF PAYMENT</h2>
+                          <p>- GoGusto takes a number of payment methods, including cash, Visa, and Mastercard.</p>
+                          <p>- Cheques are not accepted as payment for GoGusto.</p>
+                          <p>Account Name : GoGusto</p>
+                          <p>Account No. : 433 1234 789</p>
+                  
+                          
+                        
+                    </section>
+                    
+                </section>
+            </article>
+            <footer>
+                <section id="contact">
+                    <section>
+                        <p>Go Gusto</p>
+                        <p>At Go Gusto, we believe that travel is not just about the destination, but the experience. Our team of travel experts is dedicated to creating unforgettable journeys for travelers exploring Italy. let us be your guide to the wonders of this beautiful country.</p>
+                    </section>
+                    <section>
+                        <p>About Us</p>
+                        <a href="aboutus.html#mission-vision">Our Mission</a>
+                        <a href="aboutus.html#mission-vision">Our Vision</a>
+                        <a href="aboutus.html#why-choose-us">Why Choose Us</a>
+                    </section>
+                    <section>
+                        <p>Terms and Conditions</p>
+                        <a href="terms.html">Cancellation Policy</a>
+                        <a href="terms.html">Refund Policy</a>
+                        <a href="terms.html">Mode of Payment</a>
+                        <a href="terms.html">Deadline of Payment</a>
+                    </section>
+                    <section>
+                        <section>
+                            <p>Address</p>
+                            <p>Cavite, Philippines</p>
+                        </section>
+                        <section>
+                            <p>Inquiries</p>
+                            <p>(046) 431-8726</p>
+                            <p>info@gogustotravel.com</p>
+                        </section>
+                        <section>
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        </section>
+                    </section>
+                    <section>
+                        <p>Subscribe to Our Newsletter</p>
+                        <p>Keep updated with our latest packages:</p>
+                        <section>
+                        <form>
+                            <input type="email" id="email-letter" name="letter" placeholder="Enter your email..." required>
+                            <button class="btn">Subscribe</button>
+                        </form>
+                        </section>
+                    </section>
+                </section>
+                <hr/>
+                <section>
+                    <p>Disclaimer: All images used on this website and the website itself are for illustrative and educative purposes only.</p>
+                    <p>© 2023 Go Gusto. All rights reserved.</p>
+                </section>
+            </footer>
+        </main>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const closeButton = document.getElementById("close-btn");
+                const form = document.getElementById("form");
+                const formBtn = document.getElementById("form-btn");
+        
+                closeButton.addEventListener("click", function () {
+                    form.style.opacity = 0;
+                    form.style.pointerEvents = "none";
+                });
+
+                formBtn.addEventListener("click", function () {
+                    form.style.opacity = 1;
+                    form.style.pointerEvents = "auto";
+                });
+            });
+
+            // JavaScript to change header background color when scrolling
+            window.addEventListener("scroll", function() {
+                const header = document.getElementById("header");
+                const scrollPosition = window.scrollY;
+
+                if (scrollPosition >= 100) {
+                    // When scrolled down to 100vh or more
+                    header.classList.add("transparent-bg");
+                }
+                else {
+                    // When not scrolled down to 100vh
+                    header.classList.remove("transparent-bg");
+                }
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+    <head>
+        <!-- Document Metadata -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="John Yrrah Cabiles">
+
+        <!-- Favicon and Styles -->
+        <link rel="icon" type="image/x-icon" href="res/GoGustoLogo.svg">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f4f1b8744c.js" crossorigin="anonymous"></script>
+
+        <!-- Page Title -->
+        <title>About Us</title>
+    </head>
+    <body id="about-body">
+        <header id="header">
+            <section class="logo-container">
+                <img src="res/GoGustoLogo.svg" class="logo" alt="Go Gusto Logo"/>
+                <h1>Go Gusto</h1>
+            </section>
+            <nav>
+                <section>
+                    <a href="home.html">Home</a>
+                    <a href="aboutus.html" class="act">About Us</a>
+                    <a href="itinerary.html">Tour Package</a>
+                    <a href="terms.html">Terms &#38 Conditions</a>
+                    <a href="#contact">Contact Us</a>
+                </section>
+                <a class="btn" id="form-btn">Start Your Journey</a>
+                <input type="checkbox" id="menu">
+                <label for="menu" class="btn" name="menu-btn" id="menu-btn" title="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <section id="menu-content">
+                    <a href="home.html">Home</a>
+                    <a href="aboutus.html" class="act">About Us</a>
+                    <a href="#itinerary.html">Tour Package</a>
+                    <a href="terms.html">Terms &#38 Conditions</a>
+                    <a href="#contact">Contact Us</a>
+                </section>
+            </nav>
+        </header>
+        <article class="form" id="form">
+            <section>
+                <section class="close">
+                    <input type="checkbox" id="close">
+                    <label for="close" name="close-btn" id="close-btn" title="Close">
+                        <i class="fas fa-window-close"></i>
+                    </label>
+                </section>
+                <section>
+                    <h2 class="title">Start Your Journey</h2>
+                    <p>Have questions or ready to book your dream trip? Contact us today and our friendly team will assist you.</p>
+                </section>
+                <form>
+                    <section>
+                        <section>
+                            <label for="firstName">First Name</label>
+                            <input type="text" placeholder="Enter first name..." name="firstName" id="firstName" required/>
+                        </section>
+                        <section>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" placeholder="Enter last name..." name="lastName" id="lastName" required/>
+                        </section>
+                    </section>
+                    <section>
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Enter email..."  name="email" id="email" required/>
+                    </section>
+                    <section>
+                        <label for="phone">Phone Number (e.g. 09123456789)</label>
+                        <input type="tel" id="phone" placeholder="Enter phone number..." name="phone" pattern="[0-9]{11}" required/>
+                    </section>
+                    <section>
+                        <label for="date">When do you plan to travel?</label>
+                        <input type="date" placeholder="dd/mm/yyyy" id="date" name="date" min="2023-11-01" required/>
+                    </section>
+                    <section>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter message..." required></textarea>
+                    </section>
+                    <section id="agree">
+                        <input type="checkbox" id="policy" name="policy" value="true" required/>
+                        <label for="policy">You agree to our policies.</label>
+                    </section>
+                    <section>
+                        <input class="btn" type="submit" value="Submit" />
+                    </section>
+                </form>
+            </section>
+        </article>
+        <main>
+            <article class="cover">
+            </article>
+            <article id="about" class="about-us">
+                <section>
+                    <h2 class="title">About Us</h2>
+                    <section class="description-container">
+                        <img src="res/GoGustoLogo.svg" alt="Go Gusto Logo"/>
+                        <section>
+                            <h3 class="title">Go Gusto</h3>
+                            <p>At GoGusto Travel Agency, we believe that everyone deserves to experience the joy of travel. That's why we offer inclusive tour packages that cater to all travelers, regardless of their age, ability, or interests. We believe that travel is about more than just seeing new places; it's about experiencing new cultures, meeting new people, and creating memories that will last a lifetime.</p>
+                            <p>Our team of experienced travel experts is passionate about helping our clients plan the perfect vacation. We take the time to understand your individual needs and preferences, and we work with you to create a custom itinerary that will exceed your expectations. We offer a wide variety of tour packages, including everything from family-friendly adventures to romantic getaways to cultural immersion tours.</p>
+                        </section>
+                    </section>
+                    <section class="description-container" id="mission-vision">
+                            <p>No matter what type of vacation you're looking for, GoGusto Travel Agency can help you make it a reality. We offer a variety of inclusive tour packages that include airfare, accommodations, transportation, activities, and meals. We also offer a variety of travel insurance options to protect your investment.</p>
+                            <p>We understand that booking a vacation can be a daunting task, but we're here to help every step of the way. We'll handle all the logistics, so you can relax and focus on enjoying your trip.</p>
+                    </section>
+                    <section class="description-container">
+                        <section>
+                            <h3 class="title">Our Mission</h3>
+                            <p>At GoGusto, our mission is to provide tour packages that make adventure accessible to everyone. We believe that everyone deserves the opportunity to experience the world and create lasting memories, regardless of their budget, abilities, or background.</p>
+                        </section>
+                        <section>
+                            <h3 class="title">Our Vision</h3>
+                            <p>We envision a world where everyone is empowered to explore their adventurous side. We strive to be the leading provider of inclusive tour packages, offering a wide range of experiences that cater to all interests and budgets. We are committed to providing our customers with the highest level of service and support, so that they can focus on what matters most: creating unforgettable memories.</p>
+                        </section>
+                    </section>
+                </section>
+            </article>
+            <article id="tagline">
+                <h2 class="title">Adventure awaits: We plan, you explore</h2>
+                <section>
+                    <p>Our tagline captures our commitment to providing our customers with the opportunity to experience the world without having to worry about the details. We plan your trip, so you can focus on exploring and creating memories that will last a lifetime.</p>
+                    <p id="why-choose-us">Together, our mission, vision, and tagline reflect our core values of inclusivity, accessibility, and adventure. We are committed to making travel accessible to everyone, so that everyone can experience the joy of exploration.</p>
+                </section>
+            </article>
+            <article id="whychooseus">
+                <h2 class="title">Why Choose Us?</h2>
+                <section>
+                    <section>
+                        <i class="fa fa-id-card" aria-hidden="true"></i>
+                        <p class="title">Experience and Expertise</p>
+                        <p>Go Gusto, a fully licensed and insured travel agency, boasts over 20 years of experience in the travel industry. Our extensive knowledge and expertise make us a trusted choice for your travel needs.</p>
+                    </section>
+                    <section>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <p class="title">Passionate Travel Experts</p>
+                        <p>At Go Gusto, our team consists of experienced travel experts who are dedicated to helping clients plan the perfect vacation. We're passionate about crafting unforgettable journeys that align with your preferences and interests.</p>
+                    </section>
+                    <section>
+                        <i class="fas fa-brain"></i>
+                        <p class="title">Commitment to Excellence</p>
+                        <p>We are unwavering in our commitment to providing clients with an exceptional travel experience. Quality, comfort, and memorable moments are at the core of our service. When you choose Go Gusto, you choose excellence in travel.</p>
+                    </section>
+                    <section>
+                        <i class="fa fa-smile" aria-hidden="true"></i>
+                        <p class="title">Customer Satisfaction</p>
+                        <p>Your satisfaction is our top priority. We go above and beyond to ensure your journey is seamless, enjoyable, and hassle-free. From the initial inquiry to your safe return home, we are here to assist you every step of the way.</p>
+                    </section>
+                </section>
+            </article>
+            <footer>
+                <section id="contact">
+                    <section>
+                        <p>Go Gusto</p>
+                        <p>At Go Gusto, we believe that travel is not just about the destination, but the experience. Our team of travel experts is dedicated to creating unforgettable journeys for travelers exploring Italy. let us be your guide to the wonders of this beautiful country.</p>
+                    </section>
+                    <section>
+                        <p>About Us</p>
+                        <a href="#mission-vision">Our Mission</a>
+                        <a href="#mission-vision">Our Vision</a>
+                        <a href="#why-choose-us">Why Choose Us</a>
+                    </section>
+                    <section>
+                        <p>Terms and Conditions</p>
+                        <a href="terms.html">Cancellation Policy</a>
+                        <a href="terms.html">Refund Policy</a>
+                        <a href="terms.html">Mode of Payment</a>
+                        <a href="terms.html">Deadline of Payment</a>
+                    </section>
+                    <section>
+                        <section>
+                            <p>Address</p>
+                            <p>Cavite, Philippines</p>
+                        </section>
+                        <section>
+                            <p>Inquiries</p>
+                            <p>(046) 431-8726</p>
+                            <p>info@gogustotravel.com</p>
+                        </section>
+                        <section>
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        </section>
+                    </section>
+                    <section>
+                        <p>Subscribe to Our Newsletter</p>
+                        <p>Keep updated with our latest packages:</p>
+                        <section>
+                        <form>
+                            <input type="email" id="email-letter" name="letter" placeholder="Enter your email..." required>
+                            <button class="btn">Subscribe</button>
+                        </form>
+                        </section>
+                    </section>
+                </section>
+                <hr/>
+                <section>
+                    <p>Disclaimer: All images used on this website and the website itself are for illustrative and educative purposes only.</p>
+                    <p>© 2023 Go Gusto. All rights reserved.</p>
+                </section>
+            </footer>
+        </main>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const closeButton = document.getElementById("close-btn");
+                const form = document.getElementById("form");
+                const formBtn = document.getElementById("form-btn");
+        
+                closeButton.addEventListener("click", function () {
+                    form.style.opacity = 0;
+                    form.style.pointerEvents = "none";
+                });
+
+                formBtn.addEventListener("click", function () {
+                    form.style.opacity = 1;
+                    form.style.pointerEvents = "auto";
+                });
+            });
+
+            // JavaScript to change header background color when scrolling
+            window.addEventListener("scroll", function() {
+                const header = document.getElementById("header");
+                const scrollPosition = window.scrollY;
+
+                if (scrollPosition >= 100) {
+                    // When scrolled down to 100vh or more
+                    header.classList.add("transparent-bg");
+                }
+                else {
+                    // When not scrolled down to 100vh
+                    header.classList.remove("transparent-bg");
+                }
+            });
+        </script>
+    </body>
+</html>
