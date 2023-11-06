@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --max-width: 1200px;
+    --color1: #22201F;
+    --accent: #2E3D6E;
+    --background-light: white;
+    --text-light: white;
+    --text-dark: #22201F;
+}
+
+body {
+    position: relative;
+    background-color: white;
+    color: var(--text-dark);
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+header {
+    padding-top: 20px;
+    color: black;
+    height: 60px;
+    width: 100%;
+    position: sticky;
+    top: 50px;
+}
+
+nav {
+    color: black;
+}
+
+.btn {
+    background-color: var(--accent);
+    border-radius: 10px;
+}
+
+h1, .title {
+    font-family: 'Alegreya', serif;
+    font-weight: 700;
+    font-size: 100px;
+    text-shadow: 1px 1px 5px black;
+}
+
+h2, .subtitle, .tagline {
+    font-family: 'Alegreya', serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+h3, .small-heading {
+    font-family: 'Alegreya', serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+p, a {
+    font-family: 'Lora', serif;
+    font-weight: 300;
+    font-size: 16px;
+    max-width: 500px;
+}
+
+hr {
+    width: 90%;
+}
+
+.row-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.column-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#cover video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#promotion {
+    width: 100vw;
+    height: 50px;
+    line-height: 10px;
+    background-color: var(--accent);
+    color: var(--text-light);
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+}
+
+#promotion > section {
+    position: relative;
+    width: 200vw;
+    animation: slider 10s infinite alternate running;
+}
+
+#promotion > section > section {
+    padding: 0px;
+    position: relative;
+    float: left;
+    width: 100vw;
+}
+
+@keyframes slider {
+    0% {right: 0px}
+    10% {right: 0px}
+    20% {right: 0px}
+    30% {right: 100vw}
+    40% {right: 100vw}
+    50% {right: 100vw}
+    60% {right: 100vw}
+    70% {right: 100vw}
+    80% {right: 0px}
+    90% {right: 0px}
+    100% {right: 0px}
+}
+
+#cover {
+    color: var(--text-light);
+    position: relative;
+    height: 100vh;
+}
+
+#cover > section {
+    position: absolute;
+    bottom: 10px;
+    animation: highligh 2s infinite alternate running;
+}
+
+@keyframes highligh {
+    0% {bottom: 10px}
+    50% {bottom: 50px; filter: drop-shadow(0 0 10px black)}
+    100% {bottom: 20px;}
+}
+
+#cover i {
+    font-size: 20px;
+}
+
+
+#intro {
+    height: 100vh;
+}
+
