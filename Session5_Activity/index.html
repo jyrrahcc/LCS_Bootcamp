@@ -19,18 +19,18 @@
     <body>
         <main>
             <article id="promotion">
-                <section class="row-container">
-                    <section class="column-container">
+                <section class="container">
+                    <section class="container column center gap">
                         <p>Sale!</p>
                         <p>Get up to 60% off sale items.</p>
                     </section>
-                    <section class="column-container">
+                    <section class="container column center gap">
                         <p>Free Delivery</p>
                         <p>Applies to orders of 1000.00 or more.</p>
                     </section>
                 </section>
             </article>
-            <article id="cover" class="column-container">
+            <article id="cover" class="container column center">
                 <h1>Evoke</h1>
                 <p class="tagline">Where Elegance Meets Style</p>
                 <video autoplay loop muted playsinline>
@@ -38,30 +38,87 @@
                     Your browser does not support the video tag.
                 </video>
                 <section>
-                    <section class="column-container">
+                    <section class="container column center">
                         <p>Scroll Down</p>
                         <i class="fa fa-angle-double-down" aria-hidden="true"></i>
                     </section>
                 </section>
             </article>
-            <header class="row-container">
-                <h2>Evoke</h2>
-                <nav>
-                    <a href="">hello</a>
-                    <a>hello</a>
-                    <a>hello</a>
-                    <a>hello</a>
-                    <a>hello</a>
+            <header class="container align-center justify-between">
+                <section class="container justify-start">
+                    <h2>Evoke</h2>
+                </section>
+                <nav class="container max center">
+                    <a href="">Formal <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                    <a>Outerwear <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                    <a>Streetwear <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                    <a>Casual <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                 </nav>
-                <section>
-                    cart
+                <section class="container justify-end">
+                    <a><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    <input type="checkbox" id="menu" class="hidden">
+                    <label for="menu" name="menu-btn" id="menu-btn" title="Menu">
+                        <i class="fas fa-bars"></i>
+                    </label>
                 </section>
             </header>
-            <article id="intro">
-
+            <article id="intro" class="container align-center justify-evenly">
+                <img src="res/cover.jpg"/>
+                <section class="container column gap">   
+                    <h2>Elevate Your Style</h2>
+                    <p>Experience the epitome of elegance and style with Evoke's diverse product line, featuring formal wear, casual wear, streetwear, and outerwear. </p>
+                    <a href="" class="btn">Shop</a>
+                </section>
             </article>
-            <footer>
-                hello
+            <footer class="container column">
+                <article class="container max align-center justify-around wrap">
+                    <h2>Sign Up for Evoke Updates</h2>
+                    <section class="wrapper column gap">
+                        <p>Get the latest updates and exclusive offers from Evoke</p>
+                        <p>By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and initiatives. More details on this are provided in our <a>Privacy Policy</a></p>
+                        <form class="wrapper gap align-center justify-start">
+                            <section>
+                                <label for="email">Enter your email:</label>
+                                <input type="email" name="email" id="email" required />
+                            </section>
+                            <input class="btn-light" type="submit" value="Submit"/>
+                        </form>
+                    </section>
+                </article>
+                <article class="container justify-between wrap">
+                    <section class="wrapper column gap">
+                        <h2>Evoke</h2>
+                        <section class="wrapper gap center">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </section>
+                    </section>
+                    <section class="wrapper column gap">
+                        <h2>Visit</h2>
+                        <section>   
+                            <p>123, 1st Street, ABC, Cavite, Philippines</p>
+                        </section>
+                    </section>
+                    <section class="wrapper column gap">
+                        <h2>Contact</h2>
+                        <section>
+                            <p>+1 (123) 456-7890</p>
+                            <p>contact@evoke.com</p>
+                        </section>
+                    </section>
+                    <section class="wrapper column gap">
+                        <h2>Legal</h2>
+                        <section>
+                            <p>Privacy Policy</p>
+                            <p>Return Policy</p>
+                            <p>Terms of Service</p>
+                        </section>
+                    </section>
+                </article>
+                <article class="container justify-start align-center">
+                    <p>© 2023 Evoke - All rights reserved.</p>
+                </article>
             </footer>
         </main>
     </body>

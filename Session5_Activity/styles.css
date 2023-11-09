@@ -6,17 +6,14 @@
 
 :root {
     --max-width: 1200px;
-    --color1: #22201F;
-    --accent: #2E3D6E;
-    --background-light: white;
-    --text-light: white;
-    --text-dark: #22201F;
+    --primary: #22201F;
+    --secondary: #fff;
 }
 
 body {
     position: relative;
-    background-color: white;
-    color: var(--text-dark);
+    background-color: var(--secondary);
+    color: var(--primary);
     width: 100%;
 }
 
@@ -27,27 +24,72 @@ a {
 
 header {
     padding-top: 20px;
-    color: black;
+    color: var(--primary);
     height: 60px;
     width: 100%;
     position: sticky;
     top: 50px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    background-color: var(--secondary);
+}
+
+img {
+    max-width: 500px;
 }
 
 nav {
-    color: black;
+    width:min-content;
+    color: var(--primary);
+}
+
+header a {
+    padding: 20px;
+    transition: all 0.3s;
+    width: fit-content;
+}
+
+header label {
+    padding: 20px;
+    transition: all 0.3s
+}
+
+header a:hover, header label:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
 }
 
 .btn {
-    background-color: var(--accent);
+    background-color: var(--primary);
     border-radius: 10px;
+    color: var(--secondary);
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+.btn-light {
+    background-color: var(--secondary);
+    border-radius: 10px;
+    color: var(--primary);
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+.btn:hover, .btn-light:hover {
+    opacity: 0.8;
+    box-shadow: 1px 1px 5px var(--primary);
+    cursor: pointer;
+}
+
+a{
+    margin: 0;
 }
 
 h1, .title {
     font-family: 'Alegreya', serif;
     font-weight: 700;
     font-size: 100px;
-    text-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 5px var(--primary);
 }
 
 h2, .subtitle, .tagline {
@@ -73,22 +115,82 @@ hr {
     width: 90%;
 }
 
-.row-container {
+.container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
     padding: 10px;
+}
+
+.margin {
+    margin: auto;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.max {
     width: 100%;
 }
 
-.column-container {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.border {
+    border: 1px solid blue;
+}
+
+.gap {
     gap: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
 }
 
 #cover video {
@@ -105,8 +207,8 @@ hr {
     width: 100vw;
     height: 50px;
     line-height: 10px;
-    background-color: var(--accent);
-    color: var(--text-light);
+    background-color: var(--primary);
+    color: var(--secondary);
     position: fixed;
     top: 0px;
     z-index: 5;
@@ -140,7 +242,7 @@ hr {
 }
 
 #cover {
-    color: var(--text-light);
+    color: var(--secondary);
     position: relative;
     height: 100vh;
 }
@@ -153,7 +255,7 @@ hr {
 
 @keyframes highligh {
     0% {bottom: 10px}
-    50% {bottom: 50px; filter: drop-shadow(0 0 10px black)}
+    50% {bottom: 50px; filter: drop-shadow(0 0 10px #000)}
     100% {bottom: 20px;}
 }
 
@@ -163,6 +265,29 @@ hr {
 
 
 #intro {
-    height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: none;
+    flex-direction: row-reverse;
 }
 
+#intro > section {
+    align-items: baseline;
+    gap: 30px;
+}
+
+#intro img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
