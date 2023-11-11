@@ -6,10 +6,11 @@
 
 :root {
     --max-width: 1200px;
-    --primary: #22201F;
+    --primary:  #22201F;
     --secondary: #fff;
 }
 
+/* Tags */
 body {
     position: relative;
     background-color: var(--secondary);
@@ -22,67 +23,8 @@ a {
     color: var(--text-dark);
 }
 
-header {
-    padding-top: 20px;
-    color: var(--primary);
-    height: 60px;
-    width: 100%;
-    position: sticky;
-    top: 50px;
-    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
-    z-index: 2;
-    background-color: var(--secondary);
-}
-
 img {
     max-width: 500px;
-}
-
-nav {
-    width:min-content;
-    color: var(--primary);
-}
-
-header a {
-    padding: 20px;
-    transition: all 0.3s;
-    width: fit-content;
-}
-
-header label {
-    padding: 20px;
-    transition: all 0.3s
-}
-
-header a:hover, header label:hover {
-    background-color: var(--primary);
-    color: var(--secondary);
-}
-
-.btn {
-    background-color: var(--primary);
-    border-radius: 10px;
-    color: var(--secondary);
-    padding: 10px 20px;
-    transition: all 0.3s;
-}
-
-.btn-light {
-    background-color: var(--secondary);
-    border-radius: 10px;
-    color: var(--primary);
-    padding: 10px 20px;
-    transition: all 0.3s;
-}
-
-.btn:hover, .btn-light:hover {
-    opacity: 0.8;
-    box-shadow: 1px 1px 5px var(--primary);
-    cursor: pointer;
-}
-
-a{
-    margin: 0;
 }
 
 h1, .title {
@@ -100,8 +42,8 @@ h2, .subtitle, .tagline {
 
 h3, .small-heading {
     font-family: 'Alegreya', serif;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 24px;
 }
 
 p, a {
@@ -111,21 +53,22 @@ p, a {
     max-width: 500px;
 }
 
-hr {
-    width: 90%;
-}
-
+/* Classes */
 .container {
     display: flex;
     padding: 10px;
 }
 
-.margin {
-    margin: auto;
+.row-reverse {
+    flex-direction: row-reverse;
 }
 
 .wrapper {
     display: flex;
+}
+
+.container.wrap {
+    flex: 0 0;
 }
 
 .wrap {
@@ -142,6 +85,16 @@ hr {
 
 .gap {
     gap: 10px;
+}
+
+.big-gap {
+    gap: 30px;
+}
+
+.hr {
+    width: 95%;
+    background-color: white;
+    height: 1px;
 }
 
 .hidden {
@@ -193,19 +146,168 @@ hr {
     align-items: flex-end;
 }
 
-#cover video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
+.input {
+    color: var(--primary);
+    background-color: var(--secondary);
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
 }
 
+.input label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.input input {
+    transition: all 1s ease;
+    padding: 5px;
+    border: none;
+    width: 100%;
+}
+
+.input input:focus ~ label, .input input:not(:placeholder-shown) ~ label {
+    display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.article {
+    padding: 50px initial;
+}
+
+.carshow > section {
+    width: 60%;
+    padding: 50px;
+}
+
+.carshow > section section {
+    background: linear-gradient(to bottom, rgba(0,0,0, 0.0), rgba(0,0,0, 0.1), black);
+    position: relative;
+    border-radius: 20px;
+}
+
+.carshow > section section > section {
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.carshow > section  section > img {
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    max-width: 400px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+/* Header Styles */
+header {
+    padding-top: 20px;
+    color: var(--primary);
+    height: 60px;
+    width: 100%;
+    position: sticky;
+    top: 70px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    background-color: var(--secondary);
+}
+
+header > section {
+    width: 100px;
+}
+
+header section a:first-child {
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+/* Dropdown Styles */
+.dropdown-section {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    background-color: var(--secondary);
+    width: max-content;
+    box-shadow: 1px 1px 5px var(--primary);
+    display: none;
+    position: absolute;
+    top: 40px;
+    z-index: -2;
+}
+
+ul.dropdown-content > li > a {
+    display: block;
+    text-align: center;
+    width: 170px;
+    padding: 0px;
+    line-height: 60px;
+}
+
+.dropdown-section:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+}
+
+header label {
+    padding: 20px;
+    transition: all 0.3s
+}
+
+header a:hover, header label:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+/* Button Styles */
+.btn {
+    background-color: var(--primary);
+    border-radius: 10px;
+    color: var(--secondary);
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+.btn-light {
+    background-color: var(--secondary);
+    border-radius: 10px;
+    color: var(--primary);
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    box-shadow: 1px 1px 5px var(--primary);
+    cursor: pointer;
+}
+
+.btn-light:hover {
+    opacity: 0.8;
+    box-shadow: 1px 1px 5px var(--secondary);
+    cursor: pointer;
+}
+
+/* Promotion */
 #promotion {
     width: 100vw;
-    height: 50px;
     line-height: 10px;
     background-color: var(--primary);
     color: var(--secondary);
@@ -227,18 +329,15 @@ hr {
     width: 100vw;
 }
 
-@keyframes slider {
-    0% {right: 0px}
-    10% {right: 0px}
-    20% {right: 0px}
-    30% {right: 100vw}
-    40% {right: 100vw}
-    50% {right: 100vw}
-    60% {right: 100vw}
-    70% {right: 100vw}
-    80% {right: 0px}
-    90% {right: 0px}
-    100% {right: 0px}
+/* Cover Styles */
+#cover video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
 }
 
 #cover {
@@ -253,41 +352,80 @@ hr {
     animation: highligh 2s infinite alternate running;
 }
 
+#cover i {
+    font-size: 20px;
+}
+
+/* Intro Section Styles */
+#intro {
+    padding: 20vh 20px;
+    position: relative;
+    width: 100%;
+}
+
+#intro > section {
+    position: absolute;
+    background-color: white;
+    width: 90%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#intro > section > section {
+    width: 45%;
+}
+
+#intro img {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.5);
+    left: 25%;
+    z-index: 1;
+}
+
+
+/* Footer Styles */
+footer {
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+footer > article {
+    width: 100%
+}
+
+
+/* Responsiveness */
+@media (max-width: 750px) {
+    header > nav.container {
+        display: none;
+    }
+}
+
+/* Animation Styles */
 @keyframes highligh {
     0% {bottom: 10px}
     50% {bottom: 50px; filter: drop-shadow(0 0 10px #000)}
     100% {bottom: 20px;}
 }
 
-#cover i {
-    font-size: 20px;
-}
-
-
-#intro {
-    padding: 50px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    gap: none;
-    flex-direction: row-reverse;
-}
-
-#intro > section {
-    align-items: baseline;
-    gap: 30px;
-}
-
-#intro img {
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-    object-position: top;
-    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.5);
-}
-
-footer {
-    background-color: var(--primary);
-    color: var(--secondary);
+@keyframes slider {
+    0% {right: 0px}
+    10% {right: 0px}
+    20% {right: 0px}
+    30% {right: 100vw}
+    40% {right: 100vw}
+    50% {right: 100vw}
+    60% {right: 100vw}
+    70% {right: 100vw}
+    80% {right: 0px}
+    90% {right: 0px}
+    100% {right: 0px}
 }

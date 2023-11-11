@@ -18,74 +18,157 @@
     </head>
     <body>
         <main>
+            <!-- Promotion -->
             <article id="promotion">
                 <section class="container">
-                    <section class="container column center gap">
-                        <p>Sale!</p>
-                        <p>Get up to 60% off sale items.</p>
+                    <section class="container center big-gap">
+                        <section class="container column center gap">
+                            <p>Sale!</p>
+                            <p>Get up to 60% off sale items.</p>
+                        </section>
+                        <a class="btn-light">Shop Now</a>
                     </section>
-                    <section class="container column center gap">
-                        <p>Free Delivery</p>
-                        <p>Applies to orders of 1000.00 or more.</p>
+                    <section class="container center big-gap">
+                        <section class="container column center gap">
+                            <p>Free Delivery</p>
+                            <p>Applies to orders of ₱1000.00 or more.</p>
+                        </section>
+                        <a class="btn-light">Learn More</a>
                     </section>
                 </section>
             </article>
+            <!-- Video Cover -->
             <article id="cover" class="container column center">
                 <h1>Evoke</h1>
                 <p class="tagline">Where Elegance Meets Style</p>
                 <video autoplay loop muted playsinline>
-                    <source src="res/3.mp4" type="video/mp4">
+                    <source src="res/2.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <section>
-                    <section class="container column center">
+                    <section class="container column center gap">
                         <p>Scroll Down</p>
                         <i class="fa fa-angle-double-down" aria-hidden="true"></i>
                     </section>
                 </section>
             </article>
+            <!-- Header -->
             <header class="container align-center justify-between">
                 <section class="container justify-start">
                     <h2>Evoke</h2>
                 </section>
+                <!-- Navigation Tabs -->
                 <nav class="container max center">
-                    <a href="">Formal <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-                    <a>Outerwear <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-                    <a>Streetwear <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-                    <a>Casual <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-                </nav>
+                    <!-- Formal Dropdown -->
+                    <section class="dropdown-section">
+                        <a href="#">Formal <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Formal Dresses</a></li>
+                            <li><a href="#">Suits and Tuxedos</a></li>
+                        </ul>
+                    </section>
+                    <!-- Outerwear Dropdown -->
+                    <section class="dropdown-section">
+                        <a href="#">Outerwear <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Coats</a></li>
+                            <li><a href="#">Jackets</a></li>
+                            <li><a href="#">Trench Coats</a></li>
+                        </ul>
+                    </section>
+                    <!-- Streetwear Dropdown -->
+                    <section class="dropdown-section">
+                        <a href="#">Streetwear <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Hoodies</a></li>
+                            <li><a href="#">Sweatshirts</a></li>
+                            <li><a href="#">Graphic Tees</a></li>
+                            <li><a href="#">Joggers</a></li>
+                        </ul>
+                    </section>
+                    <!-- Casual Dropdown -->
+                    <section class="dropdown-section">
+                        <a href="#">Casual <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Casual Dresses</a></li>
+                            <li><a href="#">Denim Jeans</a></li>
+                            <li><a href="#">T-shirts</a></li>
+                            <li><a href="#">Casual Tops</a></li>
+                            <li><a href="#">Casual Bottoms</a></li>
+                        </ul>
+                    </section>
+                </nav>                
                 <section class="container justify-end">
-                    <a><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    <!-- Search Button -->
+                    <a><i class="fa fa-search" aria-hidden="true"></i></a>
                     <input type="checkbox" id="menu" class="hidden">
+                    <!-- Menu Button -->
                     <label for="menu" name="menu-btn" id="menu-btn" title="Menu">
                         <i class="fas fa-bars"></i>
                     </label>
                 </section>
             </header>
-            <article id="intro" class="container align-center justify-evenly">
+            <!-- Intro Section -->
+            <article id="intro" class="container wrap align-center row-reverse justify-around big-gap">
                 <img src="res/cover.jpg"/>
-                <section class="container column gap">   
-                    <h2>Elevate Your Style</h2>
-                    <p>Experience the epitome of elegance and style with Evoke's diverse product line, featuring formal wear, casual wear, streetwear, and outerwear. </p>
-                    <a href="" class="btn">Shop</a>
+                <section class="wrapper">
+                    <section class="wrapper column align-center big-gap text-center">
+                        <h2>Elevate Your Style</h2>
+                        <p>Experience the epitome of elegance and style with Evoke's diverse product line, featuring formal wear, casual wear, streetwear, and outerwear. </p>
+                        <a href="" class="btn">Shop</a>
+                    </section>
                 </section>
             </article>
-            <footer class="container column">
-                <article class="container max align-center justify-around wrap">
+            <!-- Featured Section -->
+            <article id="featured" class="article container column align-center">
+                <h2>Featured</h2>
+                <section class="container justify-around align-center carshow max">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                    <section class="wrapper center">
+                        <section class="wrapper column">
+                            <img src="res/Crimson.jpg"/>
+                            <section class="container column justify-end gap">
+                                <h3 class="">Crimson Grace Dress</h3>
+                                <p>Formal Dresses</p>
+                                <p><strong>₱1000</strong></p>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="wrapper center">
+                        <section class="wrapper column">
+                            <img src="res/Sapphire.jpg"/>
+                            <section class="container column justify-end gap">
+                                <h3 class="">Sapphire Night Ensemble</h3>
+                                <p>Suits and Tuxedos</p>
+                                <p><strong>₱1000</strong></p>
+                            </section>
+                        </section>
+                    </section>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </section>
+            </article>
+            <!-- Footer -->
+            <footer class="container column gap align-center">
+                <!-- Newsletter Section -->
+                <article class="container align-center justify-around wrap gap">
                     <h2>Sign Up for Evoke Updates</h2>
                     <section class="wrapper column gap">
                         <p>Get the latest updates and exclusive offers from Evoke</p>
                         <p>By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and initiatives. More details on this are provided in our <a>Privacy Policy</a></p>
-                        <form class="wrapper gap align-center justify-start">
-                            <section>
-                                <label for="email">Enter your email:</label>
-                                <input type="email" name="email" id="email" required />
+                        <form class="wrapper gap center">
+                            <section class="input max">
+                                <input type="email" name="email" id="email" placeholder="" required />
+                                <label for="email">Email</label>
                             </section>
                             <input class="btn-light" type="submit" value="Submit"/>
                         </form>
                     </section>
                 </article>
-                <article class="container justify-between wrap">
+                <!-- Horizontal Rule -->
+                <section class="hr">
+                </section>
+                <!-- Contact and Others Section -->
+                <article class="container justify-around wrap gap">
                     <section class="wrapper column gap">
                         <h2>Evoke</h2>
                         <section class="wrapper gap center">
