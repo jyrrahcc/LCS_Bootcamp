@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* justifies an element to center */
+.justify-center {
+    justify-content: center;
+}
+
+/* justifies an element to space-around */
+.justify-around {
+    justify-content: space-around;
+}
+
+/* container - contains one or more elements */
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid black;
+}
+
+/* wrapper - wraps around individual elements */
+.wrapper {
+    margin: 20px;
+}
+
+/* box - defined element */
+.box {
+    height: 50px;
+    width: 50px;
+    background-color: #FFA503;
+    margin: 5px;
+}
+
+/* ovewrites the width of the child .containers inside the #flex parent container to 20% */
+#flex .container {
+    flex-basis: 20%;
+}
+
+/* takes more space if avaiable */
+#flex .container:last-child {
+    flex-grow: 1;
+}
