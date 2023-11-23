@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.hr {
+    width: 95%;
+    background-color: white;
+    height: 1px;
+}
