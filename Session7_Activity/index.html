@@ -9,91 +9,155 @@
     <!-- Favicon and Styles -->
     <link rel="icon" type="image/x-icon" href="logo.png">
 
-    <!-- Bootstrap CSS -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Stylesheet -->
+    <script src="https://kit.fontawesome.com/f4f1b8744c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 
     <!-- Page Title -->
     <title>Yrrah</title>
   </head>
   <body>
-    <header class="flex-container align-center justify-between fade-down">
+    <!-- Header -->
+    <header id="header" class="flex-container align-center justify-between animate fade-down">
         <section>
             <h1>Yrrah Cabiles</h1>
         </section>
+        <!-- Navigation -->
         <nav>
             <input type="checkbox" id="menu-btn" class="menu-btn" hidden/>
             <label for="menu-btn"><i class="fas fa-bars" id="bars-icon"></i></label>
             <section class="menu-content flex-container">
                 <a class="btn-cta" href="index.html">Home</a>
-                <a class="btn-cta">My Works</a>
-                <a class="btn-cta">Contact Me</a>
+                <a class="btn-cta" href="#about">Blog</a>
+                <a class="btn-cta" href="#contact">Contact</a>
             </section>
         </nav>
     </header>
     <main>
-        <article id="hero">
-            <section>
-                <section class="fade">
-                    <img id="geo-img" src="res/geo.png" />
-                    <img id="me-img" src="res/profile.jpg"/>
-                </section>
-                <section class="flex-container col big-gap">
-                    <h2 class="fade-right show">Yrrah Cabiles</h2>
-                    <h3 class="fade-right show">Aspiring Web &amp; Software Developer</h3>
-                    <p class="fade-right show">Welcome to my digital space where innovation meets functionality. I'm passionate about creating robust and user-centric web solutions that leave a lasting impact. Explore my projects and skills below!</p>
-                    <a class="btn fade-right" href="#">My Works</a>
-                </section>
+      <!-- Hero Section -->
+      <article id="hero">
+        <section class="flex-container center col">
+            <section class="fade">
+                <img id="geo-img" src="res/geo.png" />
+                <img id="geo-img2" src="res/geo.png" />
+                <img id="me-img" src="res/profile.jpg"/>
             </section>
-        </article>
+            <section class="flex-container col big-gap">
+                <h2 class="animate fade-right show">Yrrah Cabiles</h2>
+                <h3 class="animate fade-right show">Aspiring Web &amp; Software Developer</h3>
+                <p class="animate fade-right show">I craft captivating websites and robust software solutions, merging creativity with technology to transform visions into user-friendly digital experiences, driven by a fervent love for coding and problem-solving. Learn More About Me!</p>
+                <a class="animate btn fade-right" href="#about">Learn More!</a>
+            </section>
+        </section>
+      </article>
+      <!-- About Section -->
         <article id="about">
             <section>
                 <section>
-                    <h2>Hey there, I'm Yrrah Cabiles</h2>
+                    <h2 class="animate fade-left">Hey there, I'm Yrrah Cabiles</h2>
                 </section>
                 <section>
-                    <p class="animate-on-scroll">Currently pursuing a Bachelor of Science in Information Technology, my journey into web and software creation began when I delved into a captivating project - a virtual assistant inspired by movie tech. This experience sparked my passion for coding and problem-solving, steering me towards a fervor for web development.</p>
-                    <p>Crafting that virtual assistant and contributing to a mobile learning app are accomplishments that fill me with immense pride. Challenges are stepping stones; I persist until I uncover the perfect solution.</p>
-                    <p>My forte resides in designing sleek websites and constructing robust systems. But what truly elevates my work is collaboration; it's the cornerstone of innovation. Embracing diverse perspectives is my mantra, driven by the belief that amalgamating different viewpoints enriches our solutions.</p>
-                    <p>Firmly rooted in my belief, I see immense value in considering various opinions. It's within this amalgamation of thoughts that I uncover innovative solutions and gain a holistic understanding of the challenges we face.</p>
-                    <p>Eagerly diving into new challenges, each one a stepping stone towards continuous growth!</p>
+                    <p class="animate fade">Currently pursuing a Bachelor of Science in Information Technology, my journey into web and software creation began when I delved into a captivating project - a virtual assistant inspired by movie tech. This experience sparked my passion for coding and problem-solving, steering me towards a fervor for web development.</p>
+                    <p class="animate fade">Crafting that virtual assistant and contributing to a mobile learning app are accomplishments that fill me with immense pride. Challenges are stepping stones; I persist until I uncover the perfect solution.</p>
+                    <p class="animate fade">My forte resides in designing sleek websites and constructing robust systems. But what truly elevates my work is collaboration; it's the cornerstone of innovation. Embracing diverse perspectives is my mantra, driven by the belief that amalgamating different viewpoints enriches our solutions.</p>
+                    <p class="animate fade">Firmly rooted in my belief, I see immense value in considering various opinions. It's within this amalgamation of thoughts that I uncover innovative solutions and gain a holistic understanding of the challenges we face.</p>
+                    <p class="animate fade">Eagerly diving into new challenges, each one a stepping stone towards continuous growth!</p>
                 </section>
             </section>
+            <!-- Footer -->
+            <footer>
+              <!-- Contact Section -->
+              <article id="contact">
+                <section class="flex-container center gap">
+                  <section class="animate fade-left">
+                    <section>
+                      <h2>Contact</h2>
+                      <p>jyrrahcc@gmail.com</p>
+                      <p>09569549490</p>
+                    </section>
+                    <section class="flex-container gap align-center justify-start">
+                      <i class="fa fa-instagram" aria-hidden="true"></i>
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </section>
+                    <section>
+                      <a class="btn-cta">Download CV</a>
+                    </section>
+                  </section>
+                  <!-- Contact Form -->
+                  <section class="animate fade-right">
+                    <form class="flex-container col align-start justify-center gap">
+                        <input class="" type="text" placeholder="Name" required/>
+                        <input type="email" placeholder="Email" required/>
+                        <textarea name="" id="comment" cols="30" rows="10" placeholder="Message" required></textarea>
+                        <input type="submit" value="Send" class="btn"/>
+                    </form>
+                  </section>
+                </section>
+                <section class="animate fade-left">
+                  <p>Programmed by John Yrrah Chanchico Cabiles | BIT34 | 2023</p>
+                </section>
+              </article>
+            </footer>
         </article>
     </main>
-    <footer>
-      <p>Programmed by John Yrrah Chanchico Cabiles | BIT34 | 2023</p>
-    </footer>
+    <!-- Scroll Animation Script -->
     <script>
-        // Function to check if an element is in the viewport
-function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-  
-  // Function to handle scrolling and animate elements
-  function handleScroll() {
-    const elements = document.querySelectorAll('.animate-on-scroll');
-    elements.forEach((element) => {
-      if (isInViewport(element)) {
-        element.classList.add('show');
+      let observer;
+      function handleIntersect(entries, observer) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            if (entry.target.dataset.animated !== 'true') {
+              triggerAnimation(entry.target);
+              entry.target.dataset.animated = 'true';
+            }
+          } else {
+            entry.target.dataset.animated = 'false';
+          }
+        });
       }
-    });
-  }
-  
-  // Event listener to trigger animation on scroll
-  window.addEventListener('scroll', handleScroll);
-  window.addEventListener('resize', handleScroll);
-  
-  // Initial check to animate elements that are already in the viewport on page load
-  document.addEventListener('DOMContentLoaded', handleScroll);
+
+      function triggerAnimation(element) {
+        if (element.classList.contains('fade-down')) {
+          element.classList.remove('fade-down');
+          void element.offsetWidth;
+          element.classList.add('fade-down');
+        } else if (element.classList.contains('fade-right')) {
+          element.classList.remove('fade-right');
+          void element.offsetWidth;
+          element.classList.add('fade-right');
+        } else if (element.classList.contains('fade-left')) {
+          element.classList.remove('fade-left');
+          void element.offsetWidth;
+          element.classList.add('fade-left');
+        } else if (element.classList.contains('fade-up')) {
+          element.classList.remove('fade-up');
+          void element.offsetWidth;
+          element.classList.add('fade-up');
+        } else {
+          element.classList.remove('fade');
+          void element.offsetWidth;
+          element.classList.add('fade');
+        }
+      }
+
+      function setupIntersectionObserver() {
+        const elements = document.querySelectorAll('.animate');
+        const options = {
+          root: null,
+          rootMargin: '80px',
+          threshold: 0.1
+        };
+
+        observer = new IntersectionObserver(handleIntersect, options);
+
+        elements.forEach(element => {
+          observer.observe(element);
+        });
+      }
+      
+      document.addEventListener('DOMContentLoaded', setupIntersectionObserver);
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   </body>
 </html>

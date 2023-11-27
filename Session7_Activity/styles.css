@@ -13,7 +13,7 @@
     --sm-padding: 10px;
     --m-padding: 20px;
     --margin: 10px;
-    --height: 800px;
+    --height: 900px;
 }
 
 body {
@@ -27,6 +27,21 @@ header {
     padding: var(--sm-padding);
     width: 100%;
     z-index: 100;
+}
+
+form input, textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.5; 
 }
 
 article, footer {
@@ -148,7 +163,7 @@ p, button {
 /*#region fade animation and other styles*/
 .fade {
     opacity: 0;
-    animation: fade 1s ease forwards;
+    animation: fade 2s ease forwards;
 }
   
 @keyframes fade {
@@ -163,7 +178,7 @@ p, button {
 .fade-up {
     opacity: 0;
     transform: translateY(100px);
-    animation: fadeUp 1s ease forwards;
+    animation: fadeUp 2s ease forwards;
 }
   
 @keyframes fadeUp {
@@ -180,7 +195,7 @@ p, button {
 .fade-down {
     opacity: 0;
     transform: translateY(-100px);
-    animation: fadeDown 1s ease forwards;
+    animation: fadeDown 2s ease forwards;
 }
   
 @keyframes fadeDown {
@@ -197,7 +212,7 @@ p, button {
 .fade-left {
     opacity: 0;
     transform: translateX(-100px);
-    animation: fadeLeft 1s ease forwards;
+    animation: fadeLeft 2s ease forwards;
 }
   
 @keyframes fadeLeft {
@@ -214,7 +229,7 @@ p, button {
 .fade-right {
     opacity: 0;
     transform: translateX(100px);
-    animation: fadeRight 1s ease forwards;
+    animation: fadeRight 2s ease forwards;
 }
   
 @keyframes fadeRight {
@@ -341,10 +356,8 @@ nav a {
     background: linear-gradient(135deg, rgba(255, 140, 0, 0.5), #2c3e50c4,#2c3e50);
 }
 
-#hero > section > section:last-child { 
-    --speed: 5;
-    animation: parallaxY linear;
-    animation-timeline: scroll();
+#hero > section {
+    height: 90vh;
 }
 
 #me-img {
@@ -368,38 +381,66 @@ nav a {
     animation-timeline: scroll();
 }
 
+#geo-img2 {
+    --speed: -5;
+    width: 100vw;
+    position: absolute;
+    left: 0px;
+    top: 150vh;
+    z-index: -1;
+    animation: parallaxY linear;
+    animation-timeline: scroll();
+}
+
 /*#endregion */
 
+/*#region about section styles*/
 #about {
     width: 100%;
-    min-height: 2000px;
     padding: 0px;
-    background-color: #2c3e50;
     position: absolute;
     top: 100vh;
     border-radius: 0px 50vw 0px 0px;
     z-index: 2;
+    overflow-x: hidden;
 }
 
 #about > section {
     width: 100%;
-    height: var(--height);
     border-radius: 0px 50vw 0px 0px;
     position: relative;
-    border: 1px solid white;
+    padding: 10vw 15vw 10vw 20px;
+    background: linear-gradient(55deg, rgba(255, 140, 0, 0.5),#2c3e50);
 }
 
 #about p {
     margin: 20px 0px;
 }
 
-#about > section > section:first-child {
-    position: absolute;
-    left: -240px;
-    --speed: 5;
-    animation: parallaxX linear;
-    animation-timeline: scroll();
+#about > section > section:first-child > h2 {
+    font-size: 30px;
 }
+/*#endregion */
+
+/*#region footer styles*/
+footer {
+    overflow-x: hidden;
+    background-color: white;
+    padding: 0px;
+}
+
+footer > article {
+    background: linear-gradient(345deg, rgba(255, 140, 0, 0.5), #2c3e50c4,#2c3e50);
+}
+
+footer > article > section {
+    flex-direction: column;
+}
+
+footer > article > section > section {
+    flex: 1 1 55%;
+}
+/*#endregion */
 
 /*#endregion */
 
@@ -493,20 +534,12 @@ nav a {
     }
     /*#endregion */
 
-    .animate-on-scroll {
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-      }
-      
-      .animate-on-scroll.show {
-        opacity: 1;
-      }
-      
-    #about > section > section {
-        --speed: 10;
-        animation: parallaxY linear;
-        animation-timeline: scroll();
-        position: absolute;
+    #about > section > section:first-child > h2 {
+        font-size: 60px;
+    }
+
+    footer > article > section {
+        flex-direction: row;
     }
 
 }
