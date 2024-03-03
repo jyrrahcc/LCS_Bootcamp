@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --primary-color: #ff6900;
+    --font-color: #131312;
+}
+
+#toggle {
+    color: white;
+}
+
+#toggle:hover {
+    color: var(--primary-color);
+}
+
+#custom .nav-item > .nav-link {
+    color: rgba(255, 255, 255, 0);
+    width: max-content;
+    text-shadow: 0px 0px white;
+    transition: all 0.5s;
+}
+  
+#custom .nav-item:hover .nav-link {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    text-shadow: 0px 0px var(--primary-color);
+}
+
+#btnToggle:focus + div .nav-link {
+    background-color: #212529;
+    width: 100%;
+    padding: 5px;
+}
+
+#btnToggle:focus + div {
+    background-color: #212529;
+    width: 100%;
+    padding: 5px;
+    border-bottom: 5px solid var(--primary-color);
+}
+
+.fa-search {
+    padding: 5px;
+    text-shadow: 0px 0px white;
+}
+
+.carousel {
+    border-bottom: 5px solid var(--primary-color);
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    height: 100vh;
+    opacity: 0.5;
+}
+
+#btnToggle:hover .navbar {
+    background: white;
+}
+
+#sticky {
+    height: 70px;
+    border-bottom: 5px solid var(--primary-color);
+    z-index: 2;
+}
+
+#custom .btn-xiaomi {
+    color: white;
+    background-color: var(--primary-color)
+}
+
+#custom .btn-xiaomi:hover {
+    box-shadow: 2px 2px 6px var(--primary-color);
+    background-color: white;
+    color: var(--primary-color);
+}
+
+#custom .pos {
+    height: calc(100vh - 70px);
+    top: 70px;
+    z-index: 0;
+}
+
+#custom .scroll > * {
+    margin: 30px 0px;
+}
+
+#custom #featured p.lead {
+    text-align: justify;
+}
+
+
+/*#region fade animation and other styles*/
+.fade {
+    opacity: 0;
+    animation: fade 2s ease forwards;
+}
+  
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(100px);
+    animation: fadeUp 2s ease forwards;
+}
+  
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-down {
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: fadeDown 2s ease forwards;
+}
+  
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: fadeLeft 2s ease forwards;
+}
+  
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-right {
+    opacity: 0;
+    transform: translateX(100px);
+    animation: fadeRight 2s ease forwards;
+}
+  
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes parallaxY {
+    to {
+        transform: translateY(calc(var(--speed) * 75px));
+    }
+}
+
+@keyframes parallaxX {
+    to {
+        transform: translateX(calc(var(--speed) * 75px));
+    }
+}
+
+/*#endregion */
+
+@media screen and (max-width: 991px) {
+    #custom .col-desc {
+        display: none;
+    }
+}

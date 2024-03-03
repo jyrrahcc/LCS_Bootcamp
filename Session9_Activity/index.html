@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Document Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="John Yrrah Cabiles">
+
+    <!-- Favicon and Styles -->
+    <link rel="icon" type="image/x-icon" href="res/logo.png">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- Page Title -->
+    <title>Xiaomi</title>
+  </head>
+  <body id="custom">
+    <!-- Header Navigation -->
+    <header class="container-fluid">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top fade-down">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="res/logo.png" alt="Xiaomi" style="width:40px;" class="rounded-pill"/></a>
+            <button id="btnToggle" class="navbar-toggler text-warning" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars" id="toggle"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul id="navbar" class="navbar-nav ml-auto justify-content-center w-100">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Phone</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">SmartHome</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">LifeStyle</a>
+                </li>
+              </ul>
+              <ul id="search" class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Carousel -->
+        <div id="HeroCarousel" class="carousel slide fade" data-bs-ride="carousel">
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#HeroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#HeroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#HeroCarousel" data-bs-slide-to="2"></button>
+          </div>
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner bg-dark">
+            <div class="carousel-item active" data-bs-interval="500">
+              <img src="res/innovation.jpg" class="d-block w-100">
+              <div class="carousel-caption fade-up h-100 d-flex justify-content-center align-items-center flex-column">
+                <h3 class="display-2">Discover Innovation</h3>
+                <p>Explore our cutting-edge technology and groundbreaking products that redefine the future.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="res/xiaomi10.jpg" class="d-block w-100" data-bs-interval="1000">
+              <div class="carousel-caption fade-up h-100 d-flex justify-content-center align-items-center flex-column">
+                <h3 class="display-2">Quality Meets Affordability</h3>
+                <p>Discover competitively priced products without compromising on quality.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="res/xiaomi1.png" class="d-block w-100">
+              <div class="carousel-caption fade-up h-100 d-flex justify-content-center align-items-center flex-column">
+                <h3 class="display-2">Where Style Meets Functionality</h3>
+                <p>Immerse yourself in beautifully designed products that seamlessly blend aesthetics and practicality.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Navigation Arrows -->
+          <a class="carousel-control-prev" href="#HeroCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#HeroCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <!-- Jumbotron -->
+        <div class="bg-dark text-white pt-5">
+          <div class="container">
+              <div class="row align-items-center">
+                  <div class="col-lg-6 text-center fade-left">
+                      <h2 class="display-4 mb-4">Welcome to Xiaomi</h2>
+                      <p class="lead mb-4">Discover the future of technology with our innovative products.</p>
+                      <a href="#" class="btn btn-xiaomi btn-lg mb-4">Explore Now</a>
+                  </div>
+                  <div class="col-lg-6 d-flex justify-content-center fade-right">
+                      <img src="res/logomi.jpg" alt="Xiaomi Products" class="img-fluid rounded shadow-lg">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- sticky header bg -->
+        <section id="sticky" class="container-fluid sticky-top bg-dark mt-0">
+        </section>
+        <!-- Featured Products -->
+        <section id="featured" class="container-fluid">
+          <!-- Redmi Note 13 Pro -->
+          <section class="row">
+            <section class="col-lg-5 bg-dark col-desc">
+              <section class="sticky-sm-top pos text-white text-center d-flex flex-column align-items-center justify-content-center">
+                <h2 class="display-1 h1 mb-4">Redmi Note 13 Pro</h2>
+                <p class="display-6 mb-4">Every shot iconic</p>
+                <p class="lead">200MP OIS camera</p>
+                <p class="lead">67W turbo charging</p>
+                <a href="#" class="btn btn-xiaomi btn-lg mb-4">Learn More</a>
+              </section>
+            </section>
+            <section class="col-lg-7 p-0">
+              <section class="bg-light d-flex flex-column p-md-5 p-2 scroll">
+                <section class="text-center">
+                  <h2 class="display-2">Redmi Note 13 Pro</h2>
+                  <p class="h2">120Hz adaptive high refresh rate display</p>
+                  <p class="lead">Multiple refresh rate options intelligently adapt to different scenarios to reduce power consumption and ensure a more stable display, giving you a smoother viewing experience.</p>
+                </section>
+                <img src="res/redminote13pro.png" class="img-fluid"/>
+                <section class="text-center">
+                  <h2>Corning® Gorilla® Glass 5</h2>
+                </section>
+                <img src="res/redminote13pro2.png" class="img-fluid"/>
+              </section>
+            </section>
+          </section>
+          <!-- Mi 11 | 5G -->
+          <section class="row">
+            <section class="col-lg-5 bg-dark col-desc">
+              <section class="sticky-sm-top pos text-white text-center d-flex flex-column align-items-center justify-content-center">
+                <h2 class="display-1 h1 mb-4">Mi 11 | 5G</h2>
+                <p class="display-6 mb-4">MOVIE MAGIC</p>
+                <p class="lead">Cinematic 108MP</p>
+                <p class="lead">Qualcomm® Snapdragon™ 888</p>
+                <a href="#" class="btn btn-xiaomi btn-lg mb-4">Learn More</a>
+              </section>
+            </section>
+            <section class="col-lg-7 p-0">
+              <section class="bg-light d-flex flex-column p-md-5 p-2 scroll">
+                <section class="text-center">
+                  <h2 class="display-2">Mi 11 | 5G</h2>
+                  <p class="h2">Film like a director</p>
+                  <p class="lead">Xiaomi has combined exceptional hardware with cutting edge cinematic software, to offer a variety of incredibly creative yet easy-to-use videography features.</p>
+                </section>
+                <img src="res/mi11.png" class="img-fluid"/>
+                <section class="text-center">
+                  <h2>A display without compromises</h2>
+                  <p class="lead">This is a near-perfect screen, with immaculate clarity, color, and smoothness. Mi 11 set 13 new records and received an A+ rating from DisplayMate, one of the most reliable display evaluation agencies in the world.</p>
+                </section>
+                <img src="res/mi113.png" class="img-fluid"/>
+              </section>
+            </section>
+          </section>
+          <!-- POCO X6 Pro -->
+          <section class="row">
+            <section class="col-lg-5 bg-dark col-desc">
+              <section class="sticky-sm-top pos text-white text-center d-flex flex-column align-items-center justify-content-center">
+                <h2 class="display-1 h1 mb-4">POCO X6 Pro</h2>
+                <p class="display-6 mb-4">A new SPEED-CIES</p>
+                <p class="lead">Flagship MediaTek Dimensity 8300-Ultra</p>
+                <p class="lead">CrystalRes 120Hz FIow AMOLED</p>
+                <a href="#" class="btn btn-xiaomi btn-lg mb-4">Learn More</a>
+              </section>
+            </section>
+            <section class="col-lg-7 p-0">
+              <section class="bg-light d-flex flex-column p-md-5 p-2 scroll">
+                <section class="text-center">
+                  <h2 class="display-2">POCO X6 Pro</h2>
+                  <p class="h2">High-speed performance</p>
+                  <p class="lead">Expect stronger peak performance with upgraded ARMv9 architecture and 1+3+4 octa-core configuration. The one of the latest Mali-G615 GPU delivers superb features and an extraordinary user experience.</p>
+                </section>
+                <img src="res/poco.png" class="img-fluid"/>
+                <section class="text-center">
+                  <h2>64MP versatile triple camera setup</h2>
+                  <p class="lead">The extraordinary combination of hardware computing power and an AI-based imaging brain makes capturing great photos easier than ever.</p>
+                </section>
+                <img src="res/poco2.png" class="img-fluid"/>
+              </section>
+            </section>
+          </section>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer id="contact" class="container-fluid bg-dark text-white pt-5 pb-3 px-4">
+      <div class="row">
+          <!-- Support Navigation -->
+          <div class="col-lg-4 my-3">
+            <h2 class="h5">Support</h2>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">User Guide</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Warranty</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Service Center</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Where to buy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">VIP Exclusive Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mobile Phone Out-of-warranty Material Price</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Spam Protection</a>
+              </li>
+            </ul>
+          </div>
+          <!-- About Us Navigation -->
+          <div class="col-lg-4 my-3">
+            <h2 class="h5">About Us</h2>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Xiaomi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Leadership Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Privacy Policy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Integrity &amp; Compliance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trust Center</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Xiaomi HyperOS</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Follow Mi -->
+          <div class="col-lg-4 my-3">
+            <h2 class="h5 my-3">Follow Mi</h2>
+            <div class="my-3">
+              <!-- Social Icons -->
+              <a href="#" class="text-white m-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+              <a href="#" class="text-white m-3"><i class="fab fa-twitter fa-lg"></i></a>
+              <a href="#" class="text-white m-3"><i class="fab fa-instagram fa-lg"></i></a>
+            </div>
+            <p class="h5 my-3">Let's stay in touch</p>
+            <div class="mb-3">
+            <div class="form-floating mb-3 text-dark">
+              <input type="email" class="form-control" name="email" id="email" placeholder=""/>
+              <label for="email">Enter email address</label>
+            </div>
+          </div>
+          </div>
+          <hr class="bg-light mt-5">
+          <div class="row mt-3">
+            <div class="col-12">
+              <p>Copyright &copy; 2010 - 2024 Xiaomi. All Rights Reserved</p>
+            </div>
+          </div>
+      </div>
+    </footer>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
