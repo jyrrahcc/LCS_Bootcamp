@@ -7,3 +7,6 @@
 [submodule "Capstone_SimpleCalculator"]
 	path = Capstone_SimpleCalculator
 	url = https://github.com/jyrrahcc/Capstone_SimpleCalculator.git
+[submodule "Capstone_ToDoList"]
+	path = Capstone_ToDoList
+	url = https://github.com/jyrrahcc/Capstone_ToDoList.git
