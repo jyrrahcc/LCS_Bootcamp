@@ -1,23 +1,3 @@
-
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #888; 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 
 :root {
@@ -41,6 +21,25 @@
     padding: 0px;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
 body {
     background-color: var(--background-color);
     color: var(--font-color);
@@ -53,7 +52,7 @@ body {
 }
 
 #todoSection {
-    padding: 2rem 0px;
+    padding: 1rem 0px;
 }
 
 a {
@@ -78,8 +77,9 @@ a {
 
 .header_toggle {
     color: var(--primary-color);
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
+    display: none;
 }
 
 .header_img {
@@ -95,62 +95,87 @@ a {
     width: 40px;
 }
 
+.nav_list {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: max-content;
+    padding-bottom: 0.75rem;
+}
+
 .l-navbar {
     position: fixed;
     top: 0;
     left: -30%;
     width: var(--nav-width);
-    height: 100vh;
+    height: 100%;
     background-color: var(--primary-color);
     padding: .5rem 1rem 0 0;
     transition: .5s;
     z-index: var(--z-fixed);
-}
-
-.nav {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: none;
     overflow: hidden;
 }
 
-.nav_logo,
+.nav_filter {
+    height: max-content;
+    max-height: 168px;
+    overflow-y: auto;
+}
+
 .nav_link {
-    display: grid;
-    grid-template-columns: max-content max-content;
+    display: flex;
     align-items: center;
-    column-gap: 1rem;
-    padding: .5rem 0 .5rem 1.5rem;
+    font-size: 1rem;
+}
+
+.nav_item {
+    padding: 1rem;
+    padding-left: 3rem;
+    width: 100%;
+    color: var(--accent-color);
+    display: block;
+}
+
+.nav_item:hover, .nav_item:focus {
+    background-color: rgba(255,255,255, 0.3);
+    color: var(--background-color);
 }
 
 .nav_logo {
-    margin-bottom: 2rem;
+    height: calc(var(--header-height) + 1rem);
+    padding-left: 1rem;
 }
 
 .nav_logo-icon {
-    font-size: 1.25rem;
+    font-size: 2rem;
     color: var(--secondary-color);
+    margin-right: 1.5rem;
 }
 
 .nav_logo-name {
     color: var(--secondary-color);
     font-weight: 700;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .nav_link {
     position: relative;
     color: var(--accent-color);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0rem;
     transition: .3s;
+    padding: 1rem 2rem;
 }
 
-.nav_link:hover {
+.nav_link:hover, .nav_item:hover {
     color: var(--secondary-color);
 }
 
 .nav_icon {
-    font-size: 1.25rem;
+    font-size: 2rem;
+    margin-right: 1rem;
+    transition: transform 0.3s ease-in-out;
 }
 
 .show{
@@ -158,7 +183,11 @@ a {
 }
 
 .body-pd {
-    padding-left: calc(var(--nav-width) + 1rem);
+    padding: 0px 2rem;
+}
+
+.header-pd {
+    padding: 0px 1rem;
 }
 
 .active {
@@ -174,7 +203,7 @@ a {
     background-color: var(--secondary-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 515px) {
     body {
         margin: calc(var(--header-height) + 1rem) 0 0 0;
         padding-left: calc(var(--nav-width) + 2rem);
@@ -194,25 +223,40 @@ a {
         width: 45px;
     }
 
+    .nav_list {
+        max-height: calc(100vh - calc(var(--header-height) + 1rem));
+    }
+
     .l-navbar {
+        display: block;
         left: 0;
-        padding: 1rem 1rem 0 0;
+        padding: 0px;
+    }
+
+    .header_toggle {
+        display: block;
     }
 
     .show {
         width: calc(var(--nav-width) + 156px);
     }
 
-    .body-pd {
+    .body-pd, .header-pd {
         padding-left: calc(var(--nav-width) + 188px);
     }
 }
 
+html {
+    width: 100%;
+}
+
 .todo-card {
-    width: 204px;
-    height: 204px;
+    margin: 10px; /* Set maximum width */
+    width: 200px;
+    max-width: 300px;
     border-radius: 30px;
     padding: 20px;
+    flex: 1 1;
 }
 
 .todo-card * {
@@ -245,17 +289,32 @@ div.modal-backdrop {
     width: 100%;
 }
 
-#authors {
+.rotate-90 {
+    transform: rotate(90deg); /* Add transition animation */
+}
+
+.authors-move {
+    translate: -100px 0px;
+}
+
+.authors {
+    transition: all 0.3s ease-in-out;
     position: absolute;
     transform: rotate(-90deg);
-    bottom: 165px;
-    left: -148px;
+    bottom: 180px;
+    left: -142px;
     width: max-content;
-    color: white;
+    color: var(--accent-color);
 }
 
 .todo-description {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+#filter-collapse {
+    position: fixed;
+    background-color: var(--primary-color);
+    width: 100%;
 }
