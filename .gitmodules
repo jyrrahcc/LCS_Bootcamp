@@ -1,0 +1,9 @@
+[submodule "Capstone_HeatIndexTracker"]
+	path = Capstone_HeatIndexTracker
+	url = https://github.com/jyrrahcc/Capstone_HeatIndexTracker.git
+[submodule "CapstoneSimple_Calculator"]
+	path = CapstoneSimple_Calculator
+	url = https://github.com/jyrrahcc/Capstone_SimpleCalculator.git
+[submodule "Capstone_SimpleCalculator"]
+	path = Capstone_SimpleCalculator
+	url = https://github.com/jyrrahcc/Capstone_SimpleCalculator.git
